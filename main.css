@@ -1,0 +1,134 @@
+/* ----- */
+/* Reset */
+/* ----- */
+
+body,div,h1,h2,h3,h4,h5,h6,p,blockquote,pre,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,th,td,article,aside,figure,footer,header,hgroup,menu,nav,section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* ---- */
+/* Grid */
+/* ---- */
+
+/* Full width of browser */
+.grid-screen {
+	width: 100%;
+}
+
+/* Width of the page */ /* Always use this for the stuffs */
+.grid-100 {
+	width: 60%; /* This is the width of the browser */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* 2 Column Grid */
+.grid-50 {
+	width: 50%; /* This is the width of .grid-100 */
+	float: left;
+}
+
+/* 4 Column Grid */
+.grid-25 {
+	width: 25%;
+	float: left;
+}
+.grid-75 {
+	width: 75%;
+	float: left;
+}
+
+/* Colors */
+#76d3a8
+#078a5a
+
+/* ----- */
+/* Fonts */
+/* ----- */
+
+p {
+	font-family: 'Open Sans', Helvetica, Segoe UI, Roboto, sans-serif;
+	font-size: 100%;
+	font-weight: 400;
+	line-height: 1.6em;
+	margin-bottom: 1em;
+}
+
+h1 {
+	font-family: 'Open Sans', Helvetica, Segoe UI, Roboto, sans-serif;
+	font-size: 2em;
+	font-weight: 300;
+	line-height: 1em;
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+}
+
+h2 {
+	font-family: 'Open Sans', Helvetica, Segoe UI, Roboto, sans-serif;
+	font-size: 1.5em;
+	font-weight: 300;
+	line-height: 1em;
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+}
+
+h3 {
+	font-family: 'Open Sans', Helvetica, Segoe UI, Roboto, sans-serif;
+	font-size: 1em;
+	font-weight: 700;
+	line-height: 1em;
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+}
+
+a {
+	text-decoration: none;
+}
+
+.light {
+	color: rgba(0, 0, 0, 0.9);
+}
+
+.dark {
+	color: rgba(255, 255, 255, 0.9);
+}
+
+ul {
+	display: inline;
+}
+
+li {
+	line-height: 1.6em;
+	list-style-type: none;
+}
+
+/* ------ */
+/* Styles */
+/* ------ */
+
+.white {
+	background-color: #fafafa;
+}
+
+.green {
+	background-color: #336600;
+}
+
+.black {
+	background-color: #222;
+}
+
+.main-content {
+	margin: 6% 0;
+}
+
+hr {
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-left: none;
+	border-right: none;
+	height: 0px;
+	margin: 1em 0;
+}
