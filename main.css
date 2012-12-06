@@ -87,6 +87,16 @@ a {
 	text-decoration: none;
 }
 
+a:visited { }
+
+a:hover {
+	background-color: rgba(0, 0, 0, 0.2)
+	width: 120%;
+}
+
+a:active { }
+
+
 .light {
 	color: rgba(0, 0, 0, 0.95);
 }
