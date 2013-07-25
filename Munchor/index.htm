@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+    	<title>Reviews and bazaar branches</title>
+    	<link rel="stylesheet" type="text/css" href="index.css">
+	</head>
+
+    <body>
+		<div class="title">
+			<div class="body">
+        		<h1>Reviews and bazaar branches</h1>
+        		<p class="caption">A small tutorial on how to review and merge branches on elementary projects. It's very important that reviews are done the right way to maintain our applications stable and our code clean and consistent.</p>
+			</div>
+		</div>
+		
+		<div class="body">
+			<h2 class="first">What are the different steps to reviewing a branch?</h2>
+			<ol>
+				<li><p>Branch it locally and test that it fixes the bug.</p></li>
+				<li><p>Walk through the diff to make sure the fix doesn't cause any more bugs.</p></li>
+				<li><p>Last but not least, review code style.</p></li>
+			</ol>
+			<p class="last">The order of the steps isn't mandatory, I actually review the code style above everything else, to each his own.</p>
+			<h2>When and how to Needs Fixing a branch?</h2>
+			<p>For example, if you tested the branch and it doesn't fix the bug, then comment on the merge request on Launchpad and say that.</p>
+			<p>If the code style is not okay, comment on Launchpad and include every single line that breaks the code style.</p>
+			<p>In any other eventuality, make sure to be descriptive and explicit regarding the problems of the branch. If, for example, you believe the code is badly written and it should be done some other way, explain that and include a suggestion on how to do it in a more appropriate way.</p>
+			<p>Here's an example:</p>
+			<img src="./index_files/example_needs_fixing.png" class="last">
+			<h2>How to approve a branch?</h2>
+			<p>Comment on the branch saying something like "Good job!" and Approve it like this:</p>
+			<img src="./index_files/example_approve.png">
+			<p class="last">If you're the only person that has to review the branch, on top of the page, change the status of the branch to Approved. However, if other people need to review too (for example, design input is necessary), only change the status to "Approved" when every single reviewer has already approved.</p>
+			<h2>How to merge a branch that has been approved?</h2>
+			<p>These are the bazaar commands one should run to merge an already approved branch (I used lp:granite as an example, replace the branch names for each particular case). In this case, lp:~mrbeckmann/granite/fixed-bug-666 is the branch to be merged:</p>
+			<p class="pre">
+> bzr branch lp:granite <br>
+> cd granite/ <br>
+> bzr merge lp:~mrbeckmann/granite/fixed-bug-666</p>
+			<p>Now I recommend that you <tt>bzr status</tt> before commiting, just to make sure you know exactly which files are being changed.</p>
+			<p class="last pre">> bzr commit --author="Mister Beckmann &lt;hisemail@hell.com&gt;" -m "Fixed bug #666 by introducing this check and this loop." --fixes lp:666
+bzr push lp:granite</p>
+			<h2>What to do after?</h2>
+			<p>Start by going to the bug page and marking it as Fix Released (in some cases Fix Commited) and make sure the person who fixed the bug is the person who the bug is assigned to.</p>
+			<p class="last">Then, go to the Launchpad page for lp:granite (or whichever trunk you pushed to) and make sure that you put the name and correct email of the person who wrote the branch.</p>
+			<h2>I still have doubts...</h2>
+			<p class="last">If this tutorial is incomplete or you have any doubts, feel free to ask on #elementary-dev or on the development mailing list.</p>
+		</div>
+    	<footer class="last">Written by <a href="https://launchpad.net/~davidgomes">David Gomes</a>, styled by <a href="http://bassultra.deviantart.com">Harvey Cabaguio</a> ;)</footer>
+	</body>
+</html>
