@@ -5,6 +5,7 @@ body {
 	font-family: 'Open Sans', Arial, sans-serif;
 	font-size: 14px;
 	line-height: 1.5;
+<<<<<<< HEAD
 	padding: 0;
 	margin: 0;
 }
@@ -12,6 +13,8 @@ body {
 .body {
 	width: 80%;
 	margin: 0 auto;
+=======
+>>>>>>> 82e2d4c1aad8803ec93225025fa6497c11fad7d4
 }
 
 h1 {
@@ -63,6 +66,7 @@ h2 {
 img {
 	margin-left: auto;
 	margin-right: auto;
+	width: 100%;
 }
 
 footer {
