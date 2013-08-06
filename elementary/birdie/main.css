@@ -1,0 +1,51 @@
+nav {
+	border-bottom: 1px solid #d9d9d9;
+}
+
+ul {
+	margin-top: 24px;
+}
+
+li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 10px;
+	vertical-align: middle;
+}
+
+a {
+	text-decoration: none;
+	color: #444;
+}
+
+a:hover {
+	color: #08c;
+}
+
+.home {
+	border-bottom: 2px solid #d9d9d9;
+}
+
+h1 {
+	margin-bottom: 10px;
+	color: #333;
+}
+
+.dl-button {
+	border-radius: 30px;
+	border: 2px solid #888;
+	padding: 10px 20px;
+	
+	font-weight: bold;
+	text-decoration: none;
+	color: #444;
+}
+
+.download {
+	background-color: #eee;
+	border-bottom: 2px solid #d9d9d9;
+}
+
+.donate {
+	background-color: #333;
+}
