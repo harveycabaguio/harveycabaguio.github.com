@@ -2,8 +2,10 @@
 <html>
     <head>
 		<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
-    	<title>Reviews and bazaar branches</title>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="960.css">
     	<link rel="stylesheet" type="text/css" href="index.css">
+		<title>Reviews and bazaar branches</title>
 	</head>
 
     <body>
@@ -33,14 +35,16 @@
 			<img src="./index_files/example_approve.png">
 			<p class="last">If you're the only person that has to review the branch, on top of the page, change the status of the branch to Approved. However, if other people need to review too (for example, design input is necessary), only change the status to "Approved" when every single reviewer has already approved.</p>
 			<h2>How to merge a branch that has been approved?</h2>
-			<p>These are the bazaar commands one should run to merge an already approved branch (I used lp:granite as an example, replace the branch names for each particular case). In this case, lp:~mrbeckmann/granite/fixed-bug-666 is the branch to be merged:</p>
-			<p class="pre">
-> bzr branch lp:granite <br>
-> cd granite/ <br>
-> bzr merge lp:~mrbeckmann/granite/fixed-bug-666</p>
-			<p>Now I recommend that you <tt>bzr status</tt> before commiting, just to make sure you know exactly which files are being changed.</p>
-			<p class="last pre">> bzr commit --author="Mister Beckmann &lt;hisemail@hell.com&gt;" -m "Fixed bug #666 by introducing this check and this loop." --fixes lp:666
-bzr push lp:granite</p>
+				<div class="half">
+					<p>These are the bazaar commands one should run to merge an already approved branch (I used lp:granite as an example, replace the branch names for each particular case). In this case, lp:~mrbeckmann/granite/fixed-bug-666 is the branch to be merged:</p>
+					<p class="pre">
+		> bzr branch lp:granite <br>
+		> cd granite/ <br>
+		> bzr merge lp:~mrbeckmann/granite/fixed-bug-666</p>
+					<p>Now I recommend that you <tt>bzr status</tt> before commiting, just to make sure you know exactly which files are being changed.</p>
+					<p class="last pre">> bzr commit --author="Mister Beckmann &lt;hisemail@hell.com&gt;" -m "Fixed bug #666 by introducing this check and this loop." --fixes lp:666
+		bzr push lp:granite</p>
+				</div>
 			<h2>What to do after?</h2>
 			<p>Start by going to the bug page and marking it as Fix Released (in some cases Fix Commited) and make sure the person who fixed the bug is the person who the bug is assigned to.</p>
 			<p class="last">Then, go to the Launchpad page for lp:granite (or whichever trunk you pushed to) and make sure that you put the name and correct email of the person who wrote the branch.</p>
