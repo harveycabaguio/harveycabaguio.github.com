@@ -1,0 +1,75 @@
+/* Reset */
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* Background */
+
+body {
+	background: url(images/bg.png) rgba(0, 0, 0, 1.0);
+}
+
+.black-bg {
+	background-color: #000;
+	border-top: 1px solid rgba(255, 255, 255, 0.05);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Typography */
+
+h1 {
+	
+}
+
+h2 {
+	font-family: "Six caps", sans-serif;
+	font-size: 48px;
+	color: white;
+}
+
+p {
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	color: white;
+	line-height: 1.5;
+}
+
+.caption {
+	opacity: 0.5;	
+}
+
+.quote {
+	font-style: italic;
+}
+
+.credits {
+	font-family: "Six caps", sans-serif;
+	font-size: 24px;
+	color: white;
+}
+
+/* Layout */
+
+.center {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.whole {
+	width: 100%;
+	display: block;
+}
+
+.onefifth {
+	width: 20%;
+	margin-left: 20%;
+	float: left;
+}
+
+.twofifths {
+	width: 40%;
+}
