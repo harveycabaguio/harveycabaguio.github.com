@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="onepage-scroll.css">
+		<script type="text/javascript" src="onepage-scroll.js"></script>
+		<script>
+	  	$(document).ready(function(){
+      	$(".page").onepage_scroll({
+        	sectionContainer: "section",
+        	responsiveFallback: 600
+      		});
+		});
+
+		</script>
+		<style>
+			html {
+				height: 100%;
+			}
+			body {
+				clear: both;
+				padding: 0;
+				margin: 0;
+				height: 100%;
+				text-align: center;
+			}
+			
+			.page section {
+				overflow: hidden;
+			}
+			
+			section.page1 {
+				background:rgb(230, 217, 200);
+			}
+			
+			.page {
+				float: left;
+				width: 100%;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class="page">
+			<section class="page1"><h1>HELLO</h1><p>hi</p></section>
+			<section><h1>asdgdsfg</h1><p>fghfgj</p></section>
+			<section><h1>HELLO</h1><p>hi</p></section>
+		</div>
+	</body>
+	
+</html>

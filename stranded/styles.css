@@ -1,0 +1,145 @@
+body, p, h1, h2, h3, ul, img {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url(images/bg.png);
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+h1 {
+	font-family: 'Six Caps';
+	font-size: 48px;
+}
+
+footer, .footer {
+	font-family: 'Six Caps';
+	font-size: 24px;
+	text-align: center;
+	margin-top: 30px;
+}
+
+li.bbullet {
+	list-style-image: url(images/bullet.png);
+	list-style-position:inside;
+	margin-left: 10px;
+}
+
+header.main {
+	text-align: center;
+}
+
+.block {
+	display: block;
+}
+
+.block.center {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.caption {
+	opacity: 0.5;
+}
+
+.quote {
+	font-style: italic;
+}
+
+.onefifth {
+	width: 20%;
+	display: inline;
+	float: left;
+}
+
+.onefifth.first {
+	padding-left: 19%;
+}
+
+.onefifth.quote {
+	padding-left: 20%;
+	margin-top: 7.5%;
+}
+
+div.onefifth {
+	margin-right: 10px;
+}
+
+.whole {
+	clear:both;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.whole:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1.block.center {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.storyimg {
+	margin-bottom: 20px;
+}
+
+.vertcenter {
+	height: 38%;
+	margin-top: 15.5%;
+}
+
+/* Scroll Links */
+a.scroll-link{
+	position:absolute;
+	right:10px;
+	font-size:80%;
+	font-weight:700;
+	color:#fff;
+	text-decoration:none;
+	text-shadow:0 2px 4px rgba(0,0,0,.75);
+	transition: color 750ms, text-shadow 750ms;
+}
+
+	a.scroll-link#prev{
+		top:10px;
+	}
+
+		body.viewing-page-1 a.scroll-link#prev{
+			color:transparent;
+			text-shadow:none;
+		}
+
+	a.scroll-link#next{
+		bottom:10px;
+	}
+
+		body.viewing-page-6 a.scroll-link#next{
+			color:transparent;
+			text-shadow:none;
+		}
+
+	a.scroll-link:hover{
+		text-decoration:none;
+	}
+
+/* Scroll Overrides */
+.onepage-pagination li a:before{
+	background:rgba(255,255,255,.85);
+	box-shadow:0 2px 4px rgba(0,0,0,.75);
+	/*transition: background 750ms, box-shadow 750ms;*/
+}
+
+.onepage-pagination li a.active:before{
+	background:#fff;
+	border:1px solid #fff;
+	/*transition: background 750ms, border 750ms;*/
+}
