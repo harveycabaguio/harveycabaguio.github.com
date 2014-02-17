@@ -11,16 +11,35 @@ body {
 	line-height: 1.6;
 }
 
+div.contents{
+	padding:0;
+	margin:0 auto;
+	position:relative;
+	height:100%;
+	width: 100%;
+}
+
+div.contents.black {
+	background-color: #000;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 h1 {
-	font-family: 'Six Caps';
+	font-family: 'Six Caps', sans-serif;
 	font-size: 48px;
 }
 
 footer, .footer {
-	font-family: 'Six Caps';
+	font-family: 'Six Caps', sans-serif;
 	font-size: 24px;
 	text-align: center;
-	margin-top: 30px;
+}
+
+footer.credits {
+	position: absolute;
+	bottom: 0;
+	margin: 0 10%;
 }
 
 li.bbullet {
@@ -38,8 +57,6 @@ header.main {
 }
 
 .block.center {
-	margin-left: auto;
-	margin-right: auto;
 	text-align: center;
 }
 
@@ -89,12 +106,13 @@ h1.block.center {
 }
 
 .storyimg {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
-.vertcenter {
-	height: 38%;
-	margin-top: 15.5%;
+.vertalign {
+	position: absolute;
+	top: 50%;
+	margin-top: -10%;
 }
 
 /* Scroll Links */
