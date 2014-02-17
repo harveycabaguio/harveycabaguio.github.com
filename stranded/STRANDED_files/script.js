@@ -17,6 +17,6 @@ $(document).ready(function(){
 	});
 
 	$("a.scroll-link#next").click(function(){
-		$("#slides").moveDown();
+		$("#slides").moveTo(4)
 	});
 });
