@@ -1,3 +1,8 @@
+@font-face {
+	font-family: 'Ultra Condensed Sans';
+	src: url(./STRANDED_files/UltraCondensedSansSerif.ttf);
+}
+
 body, p, h1, h2, h3, ul, img {
 	margin: 0;
 	padding: 0;
@@ -26,20 +31,20 @@ div.contents.black {
 }
 
 h1 {
-	font-family: 'Six Caps', sans-serif;
+	font-family: 'Ultra Condensed Sans', sans-serif;
 	font-size: 48px;
 }
 
 footer, .footer {
-	font-family: 'Six Caps', sans-serif;
-	font-size: 24px;
+	font-family: 'Ultra Condensed Sans', sans-serif;
+	font-size: 19px;
 	text-align: center;
 }
 
 footer.credits {
 	position: absolute;
 	bottom: 0;
-	margin: 0 10%;
+	margin: 0 9%;
 }
 
 li.bbullet {
