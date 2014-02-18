@@ -9,6 +9,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	line-height: 1.6;
+	min-width: 840px;
 }
 
 div.contents{
@@ -27,7 +28,9 @@ div.contents.black {
 
 h1 {
 	font-family: 'Six Caps', sans-serif;
-	font-size: 48px;
+	font-size: 54px;
+	font-weight: normal;
+	letter-spacing: 4px;
 }
 
 footer, .footer {
@@ -65,6 +68,10 @@ header.main {
 	margin: 0 auto;
 }
 
+.center {
+	margin: 0 auto;
+}
+
 .caption {
 	opacity: 0.5;
 }
@@ -85,12 +92,17 @@ p.quote {
 
 .onefifth.quote {
 	padding-left: 20%;
-	margin-top: 7.5%;
+	margin-top: 7%;
 }
 
 div.onefifth {
-	max-width: 390px;
-	margin-right: 20px;
+	width: 260px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+div.onefifth.first {
+	padding-left: 20%;
 }
 
 .whole {
