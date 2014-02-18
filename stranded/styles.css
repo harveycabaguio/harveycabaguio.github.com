@@ -12,6 +12,10 @@ body {
 	min-width: 840px;
 }
 
+#story.contents {
+	width: 840px;	
+}
+
 div.contents{
 	padding:0;
 	margin:0 auto;
