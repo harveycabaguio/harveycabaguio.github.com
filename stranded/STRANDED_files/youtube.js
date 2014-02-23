@@ -6,39 +6,40 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
  
 var video;
 function onYouTubeIframeAPIReady() {
-        video = new YT.Player(player, {
-                height: '480',
-                width: '640',
-                videoId: 'SoG6udXueAk',
-                playerVars: {
-                        'wmode': 'Opaque'
-                },
-                events: {
-                        'onReady': onPlayerReady,
-                        'onStateChange': onPlayerStateChange
-                }
-        });
+	video = new YT.Player(player, {
+		height: '480',
+		width: '640',
+		videoId: 'SoG6udXueAk',
+		playerVars: {
+			controls: 0,
+			rel: 0,
+			showinfo: 0,
+		},
+		events: {
+			'onReady': onPlayerReady,
+			'onStateChange': onPlayerStateChange
+		}
+	});
 };
  
 function onPlayerReady(event) {
-	//event.target.playVideo();
 }
 
 var done = false;
 function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-                done = true;
-                overlay.style.opacity = '1.0'; // THIS NEEDS TO BE REPLACE WITH THE DISPLAY STYLE
-        };
-        if (event.data == YT.PlayerState.PLAYING) {
-                overlay.style.opacity = '1.0'; // THIS NEEDS TO BE REPLACE WITH THE DISPLAY STYLE
-        };
-        if (event.data == YT.PlayerState.PAUSED) {
-                overlay.style.opacity = '0'; // THIS IS THE DISPLAY OF OVERLAY WHEN NOT VISIBLE
-        };
+	if (event.data == YT.PlayerState.PLAYING && !done) {
+		done = true;
+		overlay.style.opacity = '1.0'; // THIS NEEDS TO BE REPLACE WITH THE DISPLAY STYLE
+	};
+	if (event.data == YT.PlayerState.PLAYING) {
+		overlay.style.opacity = '1.0'; // THIS NEEDS TO BE REPLACE WITH THE DISPLAY STYLE
+	};
+	if (event.data == YT.PlayerState.PAUSED) {
+		overlay.style.opacity = '0'; // THIS IS THE DISPLAY OF OVERLAY WHEN NOT VISIBLE
+	};
 }
  
 function stopVideo() {
-        video.stopVideo();
-        overlay.style.opacity = '0'; // THIS IS THE DISPLAY OF OVERLAY WHEN NOT VISIBLE
+	video.stopVideo();
+	overlay.style.opacity = '0'; // THIS IS THE DISPLAY OF OVERLAY WHEN NOT VISIBLE
 }
