@@ -51,7 +51,7 @@ footer, .footer {
 
 footer.credits {
 	position: absolute;
-	bottom: 10px;
+	bottom: 4px;
 	letter-spacing: 1px;
 	margin: 0 auto;
 	width: 100%;
@@ -174,7 +174,7 @@ a.scroll-link{
 		top:10px;
 	}
 
-		body.viewing-page-1 a.scroll-link#prev{
+		body.viewing-page-1 a.scroll-link#prev, body.viewing-page-4 a.scroll-link#next{
 			color:transparent;
 			text-shadow:none;
 		}
