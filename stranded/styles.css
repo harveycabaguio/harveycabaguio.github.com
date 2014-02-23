@@ -30,6 +30,12 @@ div.contents{
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+#overlay {
+	transition: opacity 1s;
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+}
+
 h1 {
 	font-family: 'Six Caps', sans-serif;
 	font-size: 54px;

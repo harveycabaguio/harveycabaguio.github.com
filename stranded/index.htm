@@ -15,6 +15,7 @@
 		<script type="text/javascript" src="./STRANDED_files/jquery-1.9.1.js"></script><style type="text/css"></style>
 		<script type="text/javascript" src="./STRANDED_files/jquery.onepage-scroll.min.js"></script>
 		<script type="text/javascript" src="./STRANDED_files/script.js"></script>
+		<script type="text/javascript" src="./STRANDED_files/youtube.js"></script>
 	</head>
 	<body class="viewing-page-1">
 		<ul class="onepage-pagination">
@@ -31,12 +32,13 @@
 					<header class="main">
 						<img src="images/title.png" class="">
 					</header>
-					<div class="block center vertalign video">
-						<iframe width="640" height="480" src="//www.youtube.com/embed/SoG6udXueAk?rel=0" frameborder="0" allowfullscreen="false"></iframe>
-					</div>
 					<footer class="credits">
 						<p><span class="caption">DESIGN</span> PETER MOORHEAD <span class="caption">// BACKGROUND ART</span> LUCAS "MIDIO" CARVALHO <span class="caption">// CHARACTER ART</span> GLAUBER KOTAKI <span class="caption">// SOUNDTRACK AND AUDIO</span> JOE "STUX" EDWARDS <span class="caption">AND</span> STEVEN "SURASSHU" VELEMA</p>
 					</footer>
+					<div id="overlay" style="display:block;background: #000;position:fixed;width:100%;height:100%;top:0;left:0;opacity:0;">&nbsp;</div>
+					<div class="block center vertalign video">
+						<div id="player"></div>
+					</div>
 				</div>
 			</section>
 			
