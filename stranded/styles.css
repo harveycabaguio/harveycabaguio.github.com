@@ -16,6 +16,10 @@ body {
 	width: 840px;
 }
 
+#merch.contents {
+	width: 1220px;
+}
+
 div.contents{
 	padding:0;
 	margin:0 auto;
@@ -41,6 +45,30 @@ h1 {
 	font-size: 54px;
 	font-weight: normal;
 	letter-spacing: 3px;
+}
+
+h2 {
+	font-family: 'Six Caps', sans-serif;
+	font-size: 32px;
+	font-weight: normal;
+	letter-spacing: 1px;
+	line-height: 1.2;
+	margin-top: 10px;
+}
+
+a {
+	text-decoration: none;
+	transition: margin-top 250ms;
+}
+
+a:visited {
+	color: #ddd;
+	text-decoration: none;
+}
+
+a.storeitem:hover {
+	margin-top: -10px;
+	transition: margin-top 500ms;
 }
 
 footer, .footer {
@@ -93,6 +121,57 @@ header.main {
 
 p.quote {
 	font-style: italic;
+}
+
+.price {
+	background: rgba(0,0,0,0.8);
+	border-radius: 3px;
+	display: table;
+	padding: 5px 10px;
+	margin: 0 10px;
+	vertical-align: bottom;
+}
+
+.store {
+	font-size: 12px;
+}
+
+.storeitem {
+	display: inline;
+	float: left;
+	margin: 0 10px;
+}
+
+.preview {
+	height: 272px;
+}
+
+.preview.poster {
+	width: 192px;
+}
+
+.preview.cd {
+	width: 272px;
+}
+
+#p1 {
+	background-image: url(images/promo1-small.png);
+}
+
+#p2 {
+	background-image: url(images/promo2-small.png);
+}
+
+#p3 {
+	background-image: url(images/promo2-small.png);
+}
+
+#c1 {
+	background-image: url(images/ost-small.png);
+}
+
+#c2 {
+	background-image: url(images/remixes-small.png);
 }
 
 .onefifth {
@@ -149,6 +228,15 @@ h1.block.center {
 	-moz-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
+}
+
+.halign {
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
 }
 
 .vertalign.video {
