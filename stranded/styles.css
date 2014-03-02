@@ -1,6 +1,9 @@
-body, p, h1, h2, h3, ul, img {
+/* I got the reset */
+body, div, p, h1, h2, h3, ul, a, img {
+	color: fff;
 	margin: 0;
 	padding: 0;
+	line-height: 1;
 }
 
 body {
@@ -8,42 +11,52 @@ body {
 	color: white;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	line-height: 1.6;
+	line-height: 1.5;
 	min-width: 840px;
-}
-
-#story.contents, #buynow.contents {
-	width: 840px;
-}
-
-#merch.contents {
-	width: 1220px;
-}
-
-#merchbg {
-	background: rgba(51, 51, 51, 0.2);
-}
-
-div.contents{
-	padding:0;
-	margin:0 auto;
-	position:relative;
-	height:100%;
-	width: 100%;
-}
-
-.black {
-	background-color: #000;
-	border-top: 1px solid rgba(255, 255, 255, 0.1);
-	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 #overlay {
 	transition: opacity 1s;
 	-webkit-transition: opacity 1s;
 	-moz-transition: opacity 1s;
+	display: block;
+	background: #000;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 
+/* ------------------------------------------------ */
+/* STYLES ----------------------------------------- */
+/* ------------------------------------------------ */
+
+/* Backgrounds */
+.black {
+	background-color: #000;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+	#merchbg {background: rgba(51, 51, 51, 0.2);}
+
+.caption {opacity: 0.5;}
+
+/* Bullet */
+li.bbullet {
+	list-style-image: url(images/bullet.png);
+	list-style-position:inside;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+/* ---------------------------------- */
+/* FONT STYLES ---------------------- */
+/* ---------------------------------- */
+
+/* Headings */
 h1 {
 	font-family: 'Six Caps', sans-serif;
 	font-size: 54px;
@@ -60,27 +73,122 @@ h2 {
 	margin-top: 10px;
 }
 
+/* Links */
 a {
 	color: #fff;
 	text-decoration: none;
 	transition: margin-top 250ms;
 }
 
-a:visited {
-	color: #ddd;
-	text-decoration: none;
-}
+	a:visited {
+		color: #ddd;
+		text-decoration: none;
+	}
 
-a.storeitem:hover {
-	margin-top: -10px;
-	transition: margin-top 500ms;
-}
+	a.storeitem:hover {
+		margin-top: -10px;
+		transition: margin-top 500ms;
+	}
 
-footer, .footer {
+/* Footer */
+footer, .subhead {
 	font-family: 'Six Caps', sans-serif;
 	font-size: 28px;
 	text-align: center;
 }
+
+	.subhead {font-size: 23px;}
+
+/* Paragraphs */
+p {line-height: 1.5; }
+	p.quote {font-style: italic;}
+
+/* ------------------------------------------------------------ */
+/* Store ------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+
+.storeitem {
+	display: block;
+	float: left;
+	margin: 0 10px;
+}
+
+	.price {
+		background: rgba(17,17,17,0.8);
+		border-radius: 3px;
+		display: table;
+		font-size: 12px;
+		margin: 0 10px;
+		padding: 5px 10px;
+		position: relative;
+		top: 234px;
+	}
+
+	.store {font-size: 12px;}
+
+	.preview {height: 272px;}
+
+		.preview.poster {width: 192px;}
+
+			#p1 {background-image: url(images/promo1-small.png);}
+
+			#p2 {background-image: url(images/promo2-small.png);}
+
+			#p3 {background-image: url(images/promo3-small.png);}
+
+		.preview.cd {width: 272px;}
+
+			#c1 {background-image: url(images/ost-small.png);}
+
+			#c2 {background-image: url(images/remixes-small.png);}
+
+/* ----------------------------------------------- */
+/* LAYOUT ---------------------------------------- */
+/* ----------------------------------------------- */
+
+.contents{
+	margin:0 auto;
+	padding:0;
+	position:relative;
+	height:100%;
+	width: 100%;
+}
+
+	#story.contents, #buynow.contents {width: 840px;}
+
+	#merch.contents {width: 1220px;}
+
+.onefifth {
+	width: 20%;
+	display: inline;
+	float: left;
+}
+
+	.onefifth.first {padding-left: 20%;}
+
+	.onefifth.quote {
+		padding-left: 20%;
+		margin-top: 7%;
+	}
+
+	.onefifth.story, .onefifth.buynow {
+		width: 260px;
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+
+.whole {
+	clear:both;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+	.whole:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
 
 footer.credits {
 	position: absolute;
@@ -88,16 +196,6 @@ footer.credits {
 	letter-spacing: 1px;
 	margin: 0 auto;
 	width: 100%;
-}
-
-.footer.subhead {
-	font-size: 23px;
-}
-
-li.bbullet {
-	list-style-image: url(images/bullet.png);
-	list-style-position:inside;
-	margin-left: 10px;
 }
 
 header.main {
@@ -111,118 +209,14 @@ header.main {
 	width: 100%;
 }
 
-.block.center {
-	text-align: center;
-	margin: 0 auto;
-}
+	.center {margin: 0 auto;}
 
-.center {
-	margin: 0 auto;
-}
+	.block.center {text-align: center;}
 
-.caption {
-	opacity: 0.5;
-}
-
-p.quote {
-	font-style: italic;
-}
-
-.price {
-	position: relative;
-	background: rgba(17,17,17,0.8);
-	border-radius: 3px;
-	display: table;
-	padding: 5px 10px;
-	margin: 0 10px;
-	vertical-align: bottom;
-	top: 228px;
-}
-
-.store {
-	font-size: 12px;
-}
-
-.storeitem {
-	display: block;
-	float: left;
-	margin: 0 10px;
-}
-
-.preview {
-	height: 272px;
-}
-
-.preview.poster {
-	width: 192px;
-}
-
-.preview.cd {
-	width: 272px;
-}
-
-#p1 {
-	background-image: url(images/promo1-small.png);
-}
-
-#p2 {
-	background-image: url(images/promo2-small.png);
-}
-
-#p3 {
-	background-image: url(images/promo2-small.png);
-}
-
-#c1 {
-	background-image: url(images/ost-small.png);
-}
-
-#c2 {
-	background-image: url(images/remixes-small.png);
-}
-
-.onefifth {
-	width: 20%;
-	display: inline;
-	float: left;
-}
-
-.onefifth.first {
-	padding-left: 20%;
-}
-
-.onefifth.quote {
-	padding-left: 20%;
-	margin-top: 7%;
-}
-
-.onefifth.story, .onefifth.buynow {
-	width: 260px;
-	margin-right: 10px;
-	margin-left: 10px;
-}
-
-div.onefifth.first {
-	padding-left: 20%;
-}
-
-.whole {
-	clear:both;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.whole:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-h1.block.center {
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
+	h1.block.center {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
 
 .storyimg {
 	margin-bottom: 10px;
@@ -235,15 +229,6 @@ h1.block.center {
 	-moz-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
-}
-
-.halign {
-	position: absolute;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	transform: translateX(-50%);
 }
 
 .vertalign.video {
