@@ -291,3 +291,9 @@ a.scroll-link{
 	border:1px solid #fff;
 	/*transition: background 750ms, border 750ms;*/
 }
+
+#previous:after{ content:  " ▴"}
+
+#next:after{ content:  " ▾"}
+
+body.viewing-page-5 a.scroll-link#next:after {content: " ▴"}
