@@ -91,10 +91,12 @@ a {
 	}
 
 /* Footer */
-footer, .subhead {
-	font-family: 'Six Caps', sans-serif;
-	font-size: 28px;
-	text-align: center;
+footer {
+	position: absolute;
+	bottom: 4px;
+	letter-spacing: 1px;
+	margin: 0 auto;
+	width: 100%;
 }
 
 	.subhead {font-size: 23px;}
@@ -190,12 +192,10 @@ p {line-height: 1.5; }
 	  clear: both;
 	}
 
-footer.credits {
-	position: absolute;
-	bottom: 4px;
-	letter-spacing: 1px;
-	margin: 0 auto;
-	width: 100%;
+.credits, .subhead {
+	font-family: 'Six Caps', sans-serif;
+	font-size: 28px;
+	text-align: center;
 }
 
 header.main {
@@ -292,8 +292,8 @@ a.scroll-link{
 	/*transition: background 750ms, border 750ms;*/
 }
 
-#previous:after{ content:  " ▴"}
+#previous:after{ content:  " \25B4"}
 
-#next:after{ content:  " ▾"}
+#next:after{ content:  " \25BE"}
 
-body.viewing-page-5 a.scroll-link#next:after {content: " ▴"}
+body.viewing-page-5 a.scroll-link#next:after {content: " \25B4"}
