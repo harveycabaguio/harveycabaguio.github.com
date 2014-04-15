@@ -99,11 +99,17 @@ footer {
 	width: 100%;
 }
 
-	.subhead {font-size: 23px;}
-
 /* Paragraphs */
 p {line-height: 1.5; }
 	p.quote {font-style: italic;}
+
+.credits, .subhead {
+	font-family: 'Six Caps', sans-serif;
+	font-size: 28px;
+	text-align: center;
+}
+
+	.subhead {font-size: 23px;}
 
 /* ------------------------------------------------------------ */
 /* Store ------------------------------------------------------ */
@@ -191,12 +197,6 @@ p {line-height: 1.5; }
 	  display: table;
 	  clear: both;
 	}
-
-.credits, .subhead {
-	font-family: 'Six Caps', sans-serif;
-	font-size: 28px;
-	text-align: center;
-}
 
 header.main {
 	position: absolute;
