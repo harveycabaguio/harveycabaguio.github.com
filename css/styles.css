@@ -101,6 +101,13 @@ body {
   width: 20%;
 }
 
+@media(max-width: 999px) and (min-width: 768px) {
+    .col1 {
+      margin: 0 1%;
+      width: 30%;
+    }
+  }
+
 #title {}
 
   #title h1 {
@@ -122,6 +129,14 @@ body {
   width: 96%;
 }
 
+  @media(max-width: 999px) and (min-width: 768px) {
+      #definitions {
+        height: 200%;
+        padding-left: 4%;
+        width: 96%;
+      }
+  }
+
   #definitions h2 {
     top: 3.5%; /* Because definitions section is 200% */
     
@@ -129,10 +144,20 @@ body {
     width: 96%;
   }
 
+  @media(max-width: 999px) and (min-width: 768px) {
+      #definitions h2 { margin-bottom: 9%;}
+  }
+
   #definitions .col1 {
     height: 25.5%;
     margin-bottom: 4%;
   }
+
+    @media(max-width: 999px) and (min-width: 768px) {
+      #definitions .col1 {
+        height: 20%;
+      }
+    }
 
 #collision { }
 
@@ -148,13 +173,32 @@ body {
     width: 50%;
   }
 
+    @media(max-width: 999px) and (min-width: 768px) {
+      #collision .content {
+        width: 80%;
+      }
+    }
+
 #factors { }
 
   #factors h2 { margin-bottom: 7%; }
 
   #factors .content {
     height: 80%;
-    margin-left: 2%;
+    margin-left: 4%;
   }
 
-/*  #factors .col1 { height: 100%; }*/
+  @media(max-width: 999px) and (min-width: 768px) {
+    #factors h2 { margin-bottom: 9%; }
+    #factors .col1:last-child {
+      width: 96%;
+    }
+    #factors .col1:last-child div {
+      display: inline;
+      float: left;
+      margin-right: 2%;
+      width: 48%;
+    }
+  }
+
+  #factors .col1 { height: 50%; }
