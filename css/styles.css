@@ -106,7 +106,7 @@ body {
   #title h1 {
     /* Positioning */
     position: absolute;
-      top: 50%;
+      top: 45%;
       -webkit-transform: translateY(-50%);
          -moz-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
@@ -123,15 +123,15 @@ body {
 }
 
   #definitions h2 {
-    top: 3.5%;
+    top: 3.5%; /* Because definitions section is 200% */
     
-    margin-bottom: 6.5%;
+    margin-bottom: 7%;
     width: 96%;
   }
 
   #definitions .col1 {
     height: 25.5%;
-    margin: 2%;
+    margin-bottom: 4%;
   }
 
 #collision { }
@@ -150,18 +150,11 @@ body {
 
 #factors { }
 
+  #factors h2 { margin-bottom: 7%; }
+
   #factors .content {
     height: 80%;
     margin-left: 2%;
   }
-  
-  #factors h2 {
-    top: 7%;
-    
-    margin-bottom: 7%;
-    width: 96%;
-  }
 
-  #factors .col1 {
-    height: 100%;
-  }
+/*  #factors .col1 { height: 100%; }*/
