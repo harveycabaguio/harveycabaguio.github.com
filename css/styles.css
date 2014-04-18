@@ -99,6 +99,7 @@ body {
   float: left;
   margin: 0 2%;
   width: 20%;
+  transition: all 500ms ease;
 }
 
 @media(max-width: 999px) and (min-width: 768px) {
@@ -144,20 +145,27 @@ body {
     width: 96%;
   }
 
-  @media(max-width: 999px) and (min-width: 768px) {
-      #definitions h2 { margin-bottom: 9%;}
-  }
-
-  #definitions .col1 {
-    height: 25.5%;
-    margin-bottom: 4%;
-  }
-
     @media(max-width: 999px) and (min-width: 768px) {
-      #definitions .col1 {
-        height: 20%;
-      }
+        #definitions h2 { margin-bottom: 9%;}
     }
+
+  #definitions .wrapper { height: 100%; }
+
+  #definitions .wrapper:hover .col1 {
+    transition: opacity 500ms ease;
+    opacity: 0.5;
+  }
+
+    #definitions .col1 {
+      height: 25.5%;
+      margin-bottom: 4%;
+    }
+
+      #definitions .wrapper:hover .col1:hover { opacity: 1.0; }
+
+      @media (max-width: 999px) and (min-width: 768px) {
+        #definitions .col1 { height: 20%; }
+      }
 
 #collision { }
 
