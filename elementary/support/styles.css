@@ -1,0 +1,108 @@
+/* Fonts */
+
+p, h1, h2, h3, a {
+  color: #333;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h2 { font-size: 24px; }
+
+h3 { font-weight: bold; }
+
+a, a p {
+  color: #08c;
+  text-decoration: none;
+}
+
+a:hover, a p:hover { color: #00527c; }
+
+a:active { color: #00527c; }
+
+li {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+/* alignment and stuff */
+
+body, html {
+  display: block;
+  position: static;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.page-container {
+  position: relative;
+  width: 948px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  .page-head {
+    display: table;
+    padding-top: 120px;
+    margin-bottom: 60px;
+  }
+
+    .page-head img {
+      display: inline;
+      float: left;
+    }
+
+    .page-head h2 {
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 12px;
+    }
+
+  .page-link {
+    position: absolute;
+    bottom: 0px;
+    display: table;
+    margin-bottom: 120px;
+    width: 25%;
+  }
+
+    .page-link a img {
+      float: left;
+    }
+
+    .page-link a p {
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 6px;
+    }
+
+section {
+  display: block;
+  height: 100%;
+  width: 100%;
+  
+  border-bottom-color: rgba(0, 0, 0, 0.05);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+  section.odd { background-color: #f9f9f9; }
+
+  section.even { background-color: #fdfdff; }
+
+
+.div-5 {
+  float: left;
+  width: 20%;
+}
+
+.div-2 {
+  float: left;
+  width: 50%;
+}
