@@ -17,11 +17,6 @@
     margin-bottom: 0;
     float: left;
     text-transform: uppercase;
-
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
 }
 
 .site-nav {
@@ -33,7 +28,6 @@
     }
 
     .page-link {
-        color: $text-color;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the first one
@@ -46,8 +40,8 @@
         position: absolute;
         top: 9px;
         right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
+        background-color: $base3;
+        border: 1px solid $base2;
         border-radius: 5px;
         text-align: right;
 
@@ -65,7 +59,7 @@
                 height: 15px;
 
                 path {
-                    fill: $grey-color-dark;
+                    fill: $base1;
                 }
             }
         }
@@ -93,7 +87,7 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    border-top: 1px solid $base3;
     padding: $spacing-unit 0;
 }
 
@@ -110,7 +104,7 @@
 
 .footer-col-wrapper {
     font-size: 15px;
-    color: $grey-color;
+    color: $base00;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
 }
@@ -181,7 +175,7 @@
 
 .post-meta {
     font-size: $small-font-size;
-    color: $grey-color;
+    color: $base00;
 }
 
 .post-link {
