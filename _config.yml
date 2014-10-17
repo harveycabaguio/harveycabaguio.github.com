@@ -4,10 +4,8 @@ email: harveycabaguio@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
  I'm a UX Designer in Winnipeg, MB. At the moment, I am completing my 4 year degree in Applied Computer Science at the University of Winnipeg. I also contribute design at [http://elementaryos.org](elementaryos.org).
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://harveycabaguio.me" # the base hostname & protocol for your site
 twitter_username: harveycabaguio
 github_username:  harveycabaguio
 
 # Build settings
 markdown: kramdown
-
