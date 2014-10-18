@@ -2,7 +2,6 @@
 * Site header
 */
 .site-header {
-  border-top: 5px solid $cyan;
   border-bottom: 1px solid $base2;
   min-height: 60px;
 
@@ -209,24 +208,6 @@
   h2 {
     font-size: 32px;
 
-    @include media-query($on-laptop) {
-      font-size: 28px;
-    }
-  }
-
-  h3 {
-    font-size: 26px;
-
-    @include media-query($on-laptop) {
-      font-size: 22px;
-    }
-  }
-
-  h4 {
-    font-size: 20px;
-
-    @include media-query($on-laptop) {
-      font-size: 18px;
-    }
+    @include media-query($on-laptop) { font-size: 28px; }
   }
 }
