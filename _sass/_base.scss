@@ -43,11 +43,15 @@ li {
 }
 
 /* Headings */
-h1 { font-family: 'Merriweather', serif; }
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: ($base-font-size) * 1.5;
+  color: $cyan;
+}
 
 /* Links */
 a {
-    color: $cyan;
+    color: $blue;
     text-decoration: none;
 
     &:visited { color: $violet; }
