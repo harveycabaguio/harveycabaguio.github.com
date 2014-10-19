@@ -44,15 +44,16 @@ li {
 
 /* Headings */
 h1 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $head-font-family;
   font-size: $base-font-size * 1.5;
+  font-weight: 700;
   color: $cyan;
 }
 
 /* Links */
 a {
-    color: $blue;
-    text-decoration: none;
+    color: $base3;
+    text-decoration: underline;
 
     &:visited { color: $violet; }
 
