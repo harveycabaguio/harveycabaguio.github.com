@@ -81,7 +81,7 @@
 /* About me on the home page */
 .about-excerpt {
   
-  border-bottom: 1px solid $base2;
+  border-bottom: 2px solid $base2;
   margin: ($spacing-unit * 2) 0;
   width: 100%;
   
@@ -92,6 +92,8 @@
   }
   
   img {
+    display: block;
+    text-align: center;
     margin-bottom: $spacing-unit;
   }
 }
