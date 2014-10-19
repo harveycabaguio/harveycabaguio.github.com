@@ -4,8 +4,10 @@ layout: default
 
 <div class="home">
   <div class="about-excerpt">
-    <img src="assets/me.png" alt="A picture of me">
-    <p>I'm a UX Designer in Winnipeg, MB. At the moment, I am completing my 4 year degree in Applied Computer Science at the University of Winnipeg. I also contribute design at <a href="http://elementaryos.org">elementary OS</a>.</p>
+    <div class="wrapper">
+      <img src="assets/me.png" alt="A picture of me" width="120" height="120">
+      <p>I'm a UX Designer in Winnipeg, MB. At the moment, I am completing my 4 year degree in Applied Computer Science at the University of Winnipeg. I also contribute design at <a href="http://elementaryos.org">elementary OS</a>.</p>
+    </div>
   </div>
   <ul class="post-list">
     {% for post in site.posts limit:5 %}
