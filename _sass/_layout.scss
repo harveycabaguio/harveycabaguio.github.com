@@ -78,6 +78,17 @@
   }
 }
 
+/* About me on the home page */
+.about-excerpt {
+  p {
+    max-width: ($on-laptop + ($spacing-unit * 2)) / 1.618;
+    text-align: center;
+  }
+  img {
+    margin: 0 auto;
+  }
+}
+
 /* Site footer */
 .site-footer {
   border-top: 1px solid $base2;
