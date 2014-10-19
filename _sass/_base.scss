@@ -7,15 +7,16 @@ dl, dd, ol, ul, figure {
 }
 
 /* Basic styling */
-body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    font-weight: 300;
-    color: $base00;
-    background-color: $base3;
-    -webkit-text-size-adjust: 100%;
+body, p {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: 300;
+  color: $base00;
+  -webkit-text-size-adjust: 100%;
 }
+
+body { background-color: $base3; }
 
 /* Set `margin-bottom` to maintain vertical rhythm */
 h1, h2, h3, h4, h5, h6,
@@ -56,6 +57,7 @@ h2 { font-size: $base-font-size * 1.5; }
 /* Links */
 a {
     color: $blue;
+    text-decoration: none;
 
     &:visited { color: $violet; }
 
