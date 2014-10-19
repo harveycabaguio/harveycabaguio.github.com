@@ -88,12 +88,11 @@
   p {
     max-width: ($on-laptop + ($spacing-unit * 2)) / 1.618;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto ($spacing-unit * 2);
   }
   
   img {
-    text-align: center;
-    margin-bottom: 0 auto $spacing-unit;
+    margin-bottom: $spacing-unit;
   }
 }
 
