@@ -12,8 +12,8 @@ layout: default
       <li>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
           <h2>{{ post.title }}</h2>
-          {{ post.excerpt }}
         </a>
+        {{ post.excerpt }}
       </li>
     {% endfor %}
   </ul>
