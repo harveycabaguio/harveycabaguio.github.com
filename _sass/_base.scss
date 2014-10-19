@@ -43,17 +43,19 @@ li {
 }
 
 /* Headings */
-h1 {
+h1, h2 {
   font-family: $head-font-family;
-  font-size: $base-font-size * 1.5;
   font-weight: 700;
   color: $cyan;
 }
 
+h1 { font-size: $base-font-size * 3; }
+
+h2 { font-size: $base-font-size * 1.5; }
+
 /* Links */
 a {
-    color: $base00;
-    text-decoration: underline;
+    color: $blue;
 
     &:visited { color: $violet; }
 
