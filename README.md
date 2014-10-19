@@ -1,4 +1,5 @@
-harveycabaguio.github.com
-=========================
+harveycabaguio.me
+=================
 
-My Website
+##Colophon
+Hosted in Github. Built using Jekyll. Using the Solarized color scheme. Set in Open Sans and Merriweather from Googlefonts.

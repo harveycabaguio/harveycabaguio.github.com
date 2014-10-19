@@ -2,8 +2,6 @@
 title: Harvey Cabaguio
 email: harveycabaguio@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog/
-twitter_username: harveycabaguio
-github_username:  harveycabaguio
 
 # Build settings
 markdown: kramdown
