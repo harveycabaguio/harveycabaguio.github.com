@@ -59,9 +59,9 @@ a {
     color: $blue;
     text-decoration: none;
 
-    &:visited { color: $violet; }
+    &:visited { background-color: $base2; }
 
-    &:hover { color: $blue; }
+    &:hover { text-decoration: underline;}
 }
 
 /* Wrapper*/
