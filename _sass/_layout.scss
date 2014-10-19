@@ -80,12 +80,17 @@
 
 /* About me on the home page */
 .about-excerpt {
+  
+  border-bottom: 1px solid $base3;
+  margin: ($spacing-unit * 2) 0;
+  
   p {
     max-width: ($on-laptop + ($spacing-unit * 2)) / 1.618;
     text-align: center;
+    margin: 0 auto;
   }
   img {
-    margin: 0 auto;
+    text-align: center;
   }
 }
 
