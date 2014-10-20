@@ -108,7 +108,10 @@
 }
 
 .footer-list {
+	display: inline;
 	float: left;
+	margin-left: 0;
+  list-style: none;
 }
 
 .post-list {
@@ -151,6 +154,8 @@
     @include media-query($on-laptop) { font-size: $base-font-size * 1.5; }
   }
 }
+
+
 
 
 
