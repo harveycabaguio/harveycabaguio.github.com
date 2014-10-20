@@ -132,13 +132,14 @@
     	
   }
 }
+
 .button {
   background-color: $blue;
   color: #fff;
   height: $spacing-unit * 3;
-  padding: 0 $spacing-unit;
+  //padding: 0 $spacing-unit;
   border-radius: 4px;
-  margin-bottom: ($spacing-unit * 2);
+  margin: ($spacing-unit * 2) 0;
 }
 
 .post-link {
