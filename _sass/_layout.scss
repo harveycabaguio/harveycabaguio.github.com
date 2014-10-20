@@ -133,7 +133,8 @@
     .button {
       background-color: $blue;
       color: #fff;
-      display: block;
+      height: $spacing-unit * 3;
+      padding: 0 $spacing-unit;
       border-radius: 4px;
       margin: ($spacing-unit * 2) 0;
     }
