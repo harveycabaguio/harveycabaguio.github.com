@@ -114,6 +114,7 @@
   
   li {
 	  float: left;
+
 	}
 }
 
@@ -126,6 +127,13 @@
     margin-top: $spacing-unit * 2;
     
     p {
+      margin-bottom: $spacing-unit * 2;
+    }
+    	
+    .button {
+      background-color: $blue;
+      color: #fff;
+      border-radius: 4px;
       margin-bottom: $spacing-unit * 2;
     }
   }
@@ -157,6 +165,7 @@
     @include media-query($on-laptop) { font-size: $base-font-size * 1.5; }
   }
 }
+
 
 
 
