@@ -134,10 +134,11 @@
 }
 
 .button {
+  display: inline-block;
   background-color: $blue;
   color: #fff;
   height: $spacing-unit * 3;
-  //padding: 0 $spacing-unit;
+  padding: 0 $spacing-unit;
   border-radius: 4px;
   margin: ($spacing-unit * 2) 0;
 }
