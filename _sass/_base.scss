@@ -49,6 +49,7 @@ h1, h2 {
   font-weight: 700;
   color: $cyan;
   text-transform: uppercase;
+  line-height: $base-line-height / 2;
 }
 
 h1 { font-size: $base-font-size * 3; }
@@ -103,4 +104,5 @@ a {
         path { fill: $base1; }
     }
 }
+
 

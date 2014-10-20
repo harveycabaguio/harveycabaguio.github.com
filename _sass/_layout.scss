@@ -95,6 +95,10 @@
     display: block;
     margin: 0 auto $spacing-unit;
   }
+  	
+  h1 {
+  	text-align: center;
+  }
 }
 
 /* Site footer */
@@ -138,3 +142,4 @@
     @include media-query($on-laptop) { font-size: $base-font-size * 1.5; }
   }
 }
+
