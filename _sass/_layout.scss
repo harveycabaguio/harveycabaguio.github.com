@@ -133,9 +133,9 @@
     .button {
       background-color: $blue;
       color: #fff;
+      display: block;
       border-radius: 4px;
-      padding: $spacing-unit;
-      margin-bottom: $spacing-unit * 2;
+      margin: ($spacing-unit * 2) 0;
     }
   }
 }
