@@ -107,6 +107,10 @@
   padding: $spacing-unit 0;
 }
 
+.footer-list {
+	float: left;
+}
+
 .post-list {
   margin-left: 0;
   list-style: none;
@@ -147,5 +151,6 @@
     @include media-query($on-laptop) { font-size: $base-font-size * 1.5; }
   }
 }
+
 
 
