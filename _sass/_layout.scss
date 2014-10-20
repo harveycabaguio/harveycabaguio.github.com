@@ -112,7 +112,8 @@
   list-style: none;
 
   > li {
-    margin-bottom: $spacing-unit;
+    border-bottom: 1px solid $base2;
+    margin: ($spacing-unit * 2) 0;
   }
 }
 
@@ -142,4 +143,5 @@
     @include media-query($on-laptop) { font-size: $base-font-size * 1.5; }
   }
 }
+
 
