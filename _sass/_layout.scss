@@ -134,6 +134,7 @@
       background-color: $blue;
       color: #fff;
       border-radius: 4px;
+      padding: $spacing-unit;
       margin-bottom: $spacing-unit * 2;
     }
   }
@@ -165,6 +166,7 @@
     @include media-query($on-laptop) { font-size: $base-font-size * 1.5; }
   }
 }
+
 
 
 
