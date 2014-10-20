@@ -108,10 +108,13 @@
 }
 
 .footer-list {
-	display: inline;
-	float: left;
-	margin-left: 0;
+	margin: 0;
   list-style: none;
+  
+  li {
+    display: inline;	
+	  float: left;
+	}
 }
 
 .post-list {
