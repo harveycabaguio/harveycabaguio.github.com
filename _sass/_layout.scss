@@ -143,6 +143,10 @@
   margin: ($spacing-unit * 2) 0;
   
   &:visited { background-color: $blue; }
+  
+  span {
+    vertical-align: middle;
+  }
 }
 
 .post-link {
