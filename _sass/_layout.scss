@@ -94,10 +94,6 @@
     display: block;
     margin: 0 auto $spacing-unit;
   }
-  	
-  h1 {
-  	text-align: center;
-  }
 }
 
 /* Site footer */
@@ -113,7 +109,7 @@
   
   li {
 	  float: left;
-    margin-right: $spacing-unit;
+    margin-right: $spacing-unit / 2;
 	}
 }
 
@@ -146,7 +142,7 @@
 
 .post-link {
   display: block;
-  font-size: $base-font-size * 1.5;
+  margin-bottom: $spacing-unit;
 }
 
 /* Posts */
@@ -155,6 +151,5 @@
   border-bottom: 2px solid $base2;
 }
 
-.post-content {
-  margin: ($spacing-unit * 2) 0;
-}
+.post-content { margin: ($spacing-unit * 2) 0; }
+

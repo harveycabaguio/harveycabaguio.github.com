@@ -52,7 +52,10 @@ h1, h2 {
   line-height: $base-line-height - ($base-line-height - 1.618);
 }
 
-h1 { font-size: $base-font-size * 3; }
+h1 { 
+	font-size: $base-font-size * 3;
+	text-align: center;
+}
 
 h2 { font-size: $base-font-size * 1.5; }
 
@@ -104,5 +107,6 @@ a {
         path { fill: $base1; }
     }
 }
+
 
 
