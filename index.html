@@ -14,7 +14,7 @@ layout: default
   <ul class="post-list">
     {% for post in site.posts limit:5 %}
       <li>
-        <img src="{{ post.thumbnail }}" alt="{{ post.thumbnail-alt }}" width="840" height="{{ post.thumbnail-h }}"/>
+        <img src="{{ post.thumbnail }}" alt="{{ post.thumbnail-alt }}" />
         <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
           {{ post.title }}
         </a></h2>
@@ -24,3 +24,4 @@ layout: default
   </ul>
   <a class="button" href="/portfolio/"><span>Check out the rest of my work</span></a>
 </div>
+
