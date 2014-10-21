@@ -16,12 +16,11 @@
   line-height: $spacing-unit * 3;
 
   .page-link {
-    line-height: $base-line-height;
+    line-height: $spacing-unit * 3 ;
     margin: 0 $spacing-unit;
     
     &:hover {
       background-color: $base2;
-      border-bottom: 2px solid $base2;
     }
   }
 }
