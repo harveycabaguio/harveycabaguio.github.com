@@ -83,7 +83,6 @@
   
   border-bottom: 2px solid $base2;
   margin: ($spacing-unit * 2) 0;
-  width: 100%;
   
   p {
     max-width: ($on-laptop + ($spacing-unit * 2)) / 1.618;
@@ -114,7 +113,7 @@
   
   li {
 	  float: left;
-
+    margin-right: $spacing-unit;
 	}
 }
 
@@ -137,7 +136,6 @@
   display: inline-block;
   background-color: $blue;
   color: #fff;
-  //height: $spacing-unit * 3;
   padding: 0 $spacing-unit;
   border-radius: 4px;
   line-height: $spacing-unit * 3;
@@ -152,31 +150,11 @@
 }
 
 /* Posts */
-.post-header { margin-bottom: $spacing-unit; }
-
-.post-title {
-  font-size: $base-font-size * 1.5;
-  line-height: 1;
-
-  @include media-query($on-laptop) {
-    font-size: $base-font-size * 1.5;
-  }
+.post-header { 
+  margin: ($spacing-unit * 2) 0;
+  border-bottom: 2px solid $base2;
 }
 
 .post-content {
-  margin-bottom: $spacing-unit;
-
-  h2 {
-    font-size: $base-font-size * 1.5;
-
-    @include media-query($on-laptop) { font-size: $base-font-size * 1.5; }
-  }
+  margin: ($spacing-unit * 2) 0;
 }
-
-
-
-
-
-
-
-
