@@ -66,13 +66,12 @@
 /* Site footer */
 .site-footer {
   border-top: 1px solid $base2;
-  padding: $spacing-unit;
+  padding: $spacing-unit 0;
 }
 
 .footer-list {
   display: inline;
   list-style: none;
-  margin-left: 0;
   
   li {
     float: left;
