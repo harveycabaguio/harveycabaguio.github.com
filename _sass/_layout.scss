@@ -29,16 +29,15 @@
   border-bottom: 2px solid $base2;
   
   p {
+    margin: 0 auto ($spacing-unit * 2);
     max-width: ($on-laptop + ($spacing-unit * 2)) / 1.618;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
 .post-list {
-  margin: 0;
   list-style: none;
+  margin: 0;
 
   > li {
     border-bottom: 1px solid $base2;
@@ -51,12 +50,12 @@
 }
 
 .button {
-  display: inline-block;
   background-color: $blue;
-  color: #fff;
-  padding: 0 $spacing-unit;
   border-radius: 4px;
+  color: #fff;
+  display: inline-block;
   line-height: $spacing-unit * 3;
+  padding: 0 $spacing-unit;
   
   &:visited { background-color: $blue; }
 }
