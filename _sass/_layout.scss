@@ -18,7 +18,7 @@
   .page-link {
   	display: inline-block;
     margin: 0;
-    padding: $spacing-unit;
+    padding: $spacing-unit 0;
     
     &:hover {
       background-color: $base2;
