@@ -1,12 +1,11 @@
 /* Site header */
-.site-header, .site-footer {
+.site-header {
   border-bottom: 1px solid $base2;
   min-height: $spacing-unit * 3;
 }
 
 .site-title {	
   font-size: $base-font-size * 1.25;
-  line-height: $spacing-unit * 3;
   margin-bottom: 0;
 }
 
@@ -26,6 +25,8 @@
 /* 40px top and bottom margins */
 .about-excerpt, .portfolio-head, .button, h1, p {
   margin: ($spacing-unit * 2) 0;
+  
+  p { margin-top: $spacing-unit; }
 }
 
 /* About me on the home page */
@@ -41,6 +42,11 @@
 }
 
 /* Site footer */
+.site-footer {
+  border-top: 1px solid $base2;
+  padding: $spacing-unit;
+}
+
 .footer-list {
   display: inline;
   margin: 0;
