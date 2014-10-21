@@ -61,7 +61,15 @@
 }
 
 /* Posts */
-.post-header { border-bottom: 2px solid $base2; }
+.post-header {
+  border-bottom: 2px solid $base2;
+  
+  h1 { margin-bottom: $spacing-unit; }
+  p {
+    margin-top: $spacing-unit;
+    text-align: center
+  }
+}
 
 /* Site footer */
 .site-footer {
