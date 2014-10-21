@@ -18,12 +18,6 @@ body, p {
 
 body { background-color: $base3; }
 
-/* Set `margin-bottom` to maintain vertical rhythm */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm { margin-bottom: $spacing-unit / 2; }
-
 /* Images */
 img {
   max-width: 100%;
@@ -31,13 +25,8 @@ img {
   margin: 0 auto $spacing-unit;
 }
 
-/* Lists */
+/* Lists in posts */
 ul, ol { margin-left: $spacing-unit; }
-
-li {
-    > ul,
-    > ol { margin-bottom: 0; }
-}
 
 /* Headings */
 h1, h2, .site-title {

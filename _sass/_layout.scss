@@ -44,7 +44,7 @@
     border-bottom: 1px solid $base2;
     margin-top: $spacing-unit * 2;
     
-    img, .post-link { margin-bottom: $spacing-unit; }
+    .post-link { margin-bottom: $spacing-unit; }
     
     p { margin: 0 auto ($spacing-unit * 2); }
   }
