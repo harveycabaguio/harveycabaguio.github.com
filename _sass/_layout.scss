@@ -68,7 +68,7 @@
     
     img { margin-bottom: $spacing-unit; }
     
-    p { margin: 0; }
+    p { margin: 0 auto ($spacing-unit * 2); }
   }
 }
 
@@ -84,7 +84,6 @@
 }
 
 .post-link {
-  display: block;
   line-height: 1;
   margin-bottom: $spacing-unit;
 }
