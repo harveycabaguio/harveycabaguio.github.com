@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="portfolio">
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <img src="{{ post.thumbnail }}" alt="{{ post.thumbnail-alt }}" width="840" height="{{ post.thumbnail-h }}"/>
+        <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+          {{ post.title }}
+        </a></h2>
+        {{ post.excerpt }}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
