@@ -119,7 +119,7 @@
 }
 
 .post-list {
-  margin-left: 0;
+  margin: 0;
   list-style: none;
 
   > li {
@@ -137,16 +137,13 @@
   display: inline-block;
   background-color: $blue;
   color: #fff;
-  height: $spacing-unit * 3;
+  //height: $spacing-unit * 3;
   padding: 0 $spacing-unit;
   border-radius: 4px;
+  line-height: $spacing-unit * 3;
   margin: ($spacing-unit * 2) 0;
   
   &:visited { background-color: $blue; }
-  
-  span {
-    vertical-align: middle;
-  }
 }
 
 .post-link {
@@ -175,6 +172,7 @@
     @include media-query($on-laptop) { font-size: $base-font-size * 1.5; }
   }
 }
+
 
 
 
