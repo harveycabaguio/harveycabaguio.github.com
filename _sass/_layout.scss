@@ -16,6 +16,7 @@
   line-height: $spacing-unit * 3;
 
   .page-link {
+  	display: inline-block;
     margin: $spacing-unit;
     
     &:hover {
@@ -95,6 +96,7 @@
 }
 
 .post-content { margin: ($spacing-unit * 2) 0; }
+
 
 
 
