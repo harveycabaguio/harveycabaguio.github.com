@@ -18,7 +18,7 @@
   .page-link {
   	display: inline-block;
     margin: 0;
-    padding: 0 ($spacing-unit / 2);
+    padding: 0 $spacing-unit;
     
     &:hover {
       background-color: $base2;
@@ -97,6 +97,7 @@
 }
 
 .post-content { margin: ($spacing-unit * 2) 0; }
+
 
 
 
