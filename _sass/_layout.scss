@@ -1,5 +1,5 @@
 /* Site header */
-.site-header {
+.site-header, .site-footer {
   border-bottom: 1px solid $base2;
   min-height: $spacing-unit * 3;
 }
@@ -41,11 +41,6 @@
 }
 
 /* Site footer */
-.site-footer {
-  border-top: 1px solid $base2;
-  padding: $spacing-unit 0;
-}
-
 .footer-list {
   display: inline;
   margin: 0;
@@ -66,6 +61,8 @@
     margin-top: $spacing-unit * 2;
     
     img { margin-bottom: $spacing-unit; }
+    
+    p { margin: 0; }
   }
 }
 
