@@ -6,7 +6,6 @@
 
 .site-title {	
   font-size: $base-font-size * 1.25;
-
   line-height: $spacing-unit * 3;
   margin-bottom: 0;
 }
@@ -18,24 +17,23 @@
   .page-link {
   	display: inline-block;
     margin: 0;
-    padding: 0 ($spacing-unit * 0.75);
+    padding: 0 $spacing-unit;
     
-    &:hover {
-      background-color: $base2;
-    }
+    &:hover { background-color: $base2; }
   }
 }
 
+about-excerpt, .portfolio-head, p, .button, h1, h2 { margin-bottom: $spacing-unit * 2; }
+
 /* About me on the home page */
 .about-excerpt, .portfolio-head {
-  
   border-bottom: 2px solid $base2;
-  margin: ($spacing-unit * 2) 0;
   
   p {
     max-width: ($on-laptop + ($spacing-unit * 2)) / 1.618;
     text-align: center;
-    margin: 0 auto ($spacing-unit * 2);
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -65,8 +63,6 @@
     margin-top: $spacing-unit * 2;
     
     img { margin-bottom: $spacing-unit; }
-    
-    p { margin-bottom: $spacing-unit * 2; }
   }
 }
 
@@ -77,7 +73,6 @@
   padding: 0 $spacing-unit;
   border-radius: 4px;
   line-height: $spacing-unit * 3;
-  margin: ($spacing-unit * 2) 0;
   
   &:visited { background-color: $blue; }
 }
@@ -89,17 +84,4 @@
 }
 
 /* Posts */
-.post-header { 
-  margin: ($spacing-unit * 2) 0;
-  border-bottom: 2px solid $base2;
-  
-  h1 { margin-bottom: ($spacing-unit * 2); }
-}
-
-.post-content { margin: ($spacing-unit * 2) 0; }
-
-
-
-
-
-
+.post-header { border-bottom: 2px solid $base2; }
