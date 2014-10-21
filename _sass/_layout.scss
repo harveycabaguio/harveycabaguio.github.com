@@ -142,6 +142,7 @@
 
 .post-link {
   display: block;
+  line-height: 1;
   margin-bottom: $spacing-unit;
 }
 
@@ -156,3 +157,4 @@
 }
 
 .post-content { margin: ($spacing-unit * 2) 0; }
+
