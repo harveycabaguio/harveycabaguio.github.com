@@ -4,15 +4,11 @@
   min-height: $spacing-unit * 3;
 }
 
-.site-title {
-  color: $cyan;
-  font-family: $head-font-family;
-  font-size: $base-font-size;
-  font-weight: 600;
+.site-title {	
+  font-size: $base-font-size * 1.25;
   line-height: $spacing-unit * 3;
   margin-bottom: 0;
   float: left;
-  text-transform: uppercase;
 }
 
 .site-nav {
@@ -98,3 +94,6 @@
 }
 
 .post-content { margin: ($spacing-unit * 2) 0; }
+
+
+

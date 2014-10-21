@@ -40,7 +40,7 @@ li {
 }
 
 /* Headings */
-h1, h2 {
+h1, h2, .site-title {
   font-family: $head-font-family;
   font-weight: 700;
   color: $cyan;
@@ -91,4 +91,5 @@ a {
         clear: both;
     }
 }
+
 
