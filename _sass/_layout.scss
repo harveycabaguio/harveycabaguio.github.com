@@ -34,7 +34,7 @@
   }
   
   @include media-query($on-palm) {
-    float none;
+    float: none;
     width: 100%;
   }
 }
