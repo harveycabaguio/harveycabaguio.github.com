@@ -28,6 +28,7 @@
     	
     @include media-query($on-palm) {
       float: left;
+      padding: 0;
       text-align: center;
       width: 50%;
     }
