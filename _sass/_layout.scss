@@ -27,14 +27,16 @@
     &:hover { background-color: $base2; }
     	
     @include media-query($on-palm) {
-      float: none;
       text-align: center;
       padding: 0;
       width: 50%;
     }
   }
   
-  @include media-query($on-palm) {	float: left; }
+  @include media-query($on-palm) {
+    float none;
+    width: 100%;
+  }
 }
 
 /* 40px top and bottom margins */
@@ -102,4 +104,5 @@
     margin-right: $spacing-unit / 4;
   }
 }
+
 
