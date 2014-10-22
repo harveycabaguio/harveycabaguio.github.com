@@ -8,6 +8,11 @@
   float: left;
   font-size: $base-font-size * 1.25;
   line-height: $spacing-unit * 3;
+  
+  @include media-query($on-palm) {
+  	display: block;
+  	text-align: center;
+  }
 }
 
 .site-nav {
