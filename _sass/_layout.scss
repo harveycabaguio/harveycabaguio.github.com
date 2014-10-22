@@ -11,8 +11,8 @@
   
   @include media-query($on-palm) {
   	display: block;
+  	float: none;
   	text-align: center;
-  	font-size: 100px;
   }
 }
 
