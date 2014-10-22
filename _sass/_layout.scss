@@ -12,6 +12,7 @@
   @include media-query($on-palm) {
   	display: block;
   	text-align: center;
+  	font-size: 100px;
   }
 }
 
@@ -94,3 +95,4 @@
     margin-right: $spacing-unit / 4;
   }
 }
+
