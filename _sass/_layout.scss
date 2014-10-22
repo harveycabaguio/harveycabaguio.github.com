@@ -27,6 +27,7 @@
     &:hover { background-color: $base2; }
     	
     @include media-query($on-palm) {
+      display: inline;
       float: none;
       text-align: center;
       width: 50%;
