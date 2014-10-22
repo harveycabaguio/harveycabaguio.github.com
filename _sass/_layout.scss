@@ -31,6 +31,10 @@
       padding: 0;
       text-align: center;
       width: 50%;
+      
+      &:last-child {
+        border-left: 1px solid $base2;
+      }
     }
   }
   
