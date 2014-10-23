@@ -99,6 +99,11 @@
   p:first-child {
     color: $base01;
     font-size: $base-font-size * 1.25;
+    margin-top: $spacing-unit * 2;
+  }
+  
+  p {
+    margin-top: $spacing-unit;
   }
 }
 	
@@ -117,3 +122,4 @@
     margin-right: $spacing-unit / 4;
   }
 }
+
