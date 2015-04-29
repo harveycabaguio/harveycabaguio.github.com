@@ -1,26 +1,13 @@
----
-layout: default
----
-
-<div class="home">
-  <div class="about-excerpt">
-    <img src="assets/me.png" alt="A picture of me" width="120" height="120">
-    <p>I'm a UX Designer in Winnipeg, MB. At the moment, I am completing my 4 year degree in Applied Computer Science at the University of Winnipeg. I also contribute design at <a href="http://elementaryos.org">elementary OS</a>.</p>
-  </div>
-  <div class="portfolio-head">
-    <h1>My Recent Work</h1>
-  </div>
-  <ul class="post-list">
-    {% for post in site.posts limit:5 %}
-      <li>
-        <img src="{{ post.thumbnail }}" alt="{{ post.thumbnail-alt }}" />
-        <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-          {{ post.title }}
-        </a></h2>
-        {{ post.excerpt }}
-      </li>
-    {% endfor %}
-  </ul>
-  <a class="button" href="/portfolio/"><span>Check out the rest of my work</span></a>
-</div>
-
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto+Slab' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Harvey Cabaguio</title>
+  </head>
+  <body>
+  
+  </body>
+</html>
