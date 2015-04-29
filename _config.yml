@@ -1,8 +1,0 @@
-# Site settings
-title: Harvey Cabaguio
-email: harveycabaguio@gmail.com
-baseurl: "" # the subpath of your site, e.g. /blog/
-permalink: /:title/
-
-# Build settings
-markdown: kramdown
