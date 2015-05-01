@@ -11,7 +11,8 @@ a,
 p,
 h1,
 h2,
-h3
+h3,
+h4
 {
   padding: 0;
   margin: 0;
@@ -20,15 +21,17 @@ h3
 /*
  * Text Elements
  */
-p {
+p, h4 {
   font-family: 'Roboto Slab', sans-serif;
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.65;
   
   color: #586e75;
 }
 
 h1 {
+  margin-bottom: 10px;
+  
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 54px;
   font-weight: 300;
@@ -61,8 +64,13 @@ h3 {
   color: #2aa198;
 }
 
+h4 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 a:link {
-  font-family: 'Roboto Slab', sans-serif;
   text-decoration: none;
   
   color: #268bd2;
@@ -103,6 +111,13 @@ a:visited {
   margin-right: 1%;
 }
 
+.third-two {
+  float: left;
+  width: 64%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
 .quarter {
   float: left;
   width: 23%;
@@ -123,6 +138,7 @@ nav a:link {
   padding: 20px;
   max-height: 60px;
   
+  font-family: 'Roboto Slab', sans-serif;
   box-sizing: border-box;
 }
 
@@ -160,6 +176,16 @@ footer {
 #about {
   padding-top: 102px;
   text-align: center;
+}
+
+#about img {
+  margin-bottom: 30px;
+}
+
+.intro {
+  margin-left: auto;
+  margin-right: auto;
+  width: 76%;
 }
 
 .pf-item {
