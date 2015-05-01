@@ -139,6 +139,7 @@ nav {
   
   background-color: #fdf6e3;
   border-bottom: 2px solid #eee8d5;
+  z-index: 10000;
 }
 
 nav a#home {
@@ -162,31 +163,36 @@ footer {
 }
 
 .pf-item {
-  height: 100%;
-  border-radius: 4px;
+  height: 300px;
 }
 
 .pf-item .content {
+  display: table;
+  height: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
   width: 80%;
-  padding: 10%;
-  display: inline-block;
   
-  border-radius: 4px;
   opacity: 0;
   
   transition-property: opacity;
   transition-duration: 300ms;
 }
 
-.pf-item .content h3,
-.pf-item .content p,
-.pf-item .content a:link {
+.pf-item .content span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.pf-item.white .content h3,
+.pf-item.white .content p {
   color:#fff;
 }
 
 .pf-item:hover .content {
   opacity: 1.0;
   border: none;
+  z-index: 9999;
 }
 
 .pf-item#foamfest {
@@ -196,7 +202,29 @@ footer {
 }
 
 .pf-item#foamfest .content {
-  background-color: rgba(0,106,246,0.8);
+  background-color: rgba(0,106,246,0.9);
+}
+
+.pf-item#elementary {
+  background-image: url("/assets/elementary-title.png"), linear-gradient(#fff,#fff);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.pf-item#elementary .content {  
+  display: table;
+  padding: 0;
+  width: 100%;
+  
+  background-color: rgba(255,255,255,0.9);
+}
+
+.pf-item#elementary .half {
+  height: 100%;
+  margin: 0;
+  padding: 5%;
+  width: 40%;
 }
 
 .pf-item#stranded {
@@ -206,5 +234,5 @@ footer {
 }
 
 .pf-item#stranded .content {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.9);
 }
