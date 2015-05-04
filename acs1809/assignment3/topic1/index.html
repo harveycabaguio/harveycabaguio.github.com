@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Working with Links - Website Design & Development</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300|Roboto+Slab' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <nav>
+      <div class="content">
+        <a href="../">Home</a>
+        <a href="../topic1/">Working with Links</a>
+        <a href="../topic2/">Working with Images</a>
+        <a href="../topic3/">Creating Lists</a>
+      </div>
+    </nav>
+    <div class="content">
+      <section>
+        <h1>Working with Links</h1>
+        <p>Creating links is incredibly easy, it does not matter if its a link to another webpage, or to a page within your site, or if its an email or file.</p>
+        <h2>The &lt;a&gt; tag</h2>
+        <p>This tag allows you to turn anything inside it into a link. But just placing text within &lt;a&gt; &lt;/a&gt; won't do the trick. The tag needs the <code>href</code> attribute for the link to go anywhere. </p>
+        <blockquote>
+          <h4>Code</h4>
+          <code>
+            &lt;a href="https://www.google.ca/"&gt;Google&lt;/a&gt;
+          </code>
+        </blockquote>
+        <div class="result">
+          <h4>Result</h4>
+          <a href="https://www.google.ca/">Google</a>
+        </div>
+        <p>As you can see, the a tag tells the browser that the content within is a link, and the href attribute of the a tag tells the browser where that link will go. </p>
+        <p>There are other attributes like <code>target</code> which allow you to change how the link is opened. For example:</p>
+        <blockquote>
+          <h4>Code</h4>
+          <code>
+            &lt;a href="https://www.google.ca/" target="_blank"&gt;Google&lt;/a&gt;
+          </code>
+        </blockquote>
+        <div class="result">
+          <h4>Result</h4>
+          <a href="https://www.google.ca/" target="_blank">Google</a>
+        </div>
+        <p><code>target="_blank"</code> will make your link open in a new tab.</p>
+        <h3>Absolute Links</h3>
+        <p>This type of link is best for linking to external websites. You must include the protocol at the beginning of the link (http://).</p>
+        <blockquote>
+          <h4>Code</h4>
+          <code>
+            &lt;a href="https://www.google.ca/"&gt;Google&lt;/a&gt;
+          </code>
+        </blockquote>
+        <div class="result">
+          <h4>Result</h4>
+          <a href="https://www.google.ca/">Google</a>
+        </div>
+        <h3>Relative Links</h3>
+        <p>This type of link is used to link other pages within your website.</p>
+        <blockquote>
+          <h4>Linking to a file in the same folder</h4>
+          <code>
+            &lt;a href="index.html"&gt;Working with Links&lt;/a&gt;
+          </code>
+          <h4>Linking to a file in folder inside the current one</h4>
+          <code>
+            &lt;a href="folder/index.html"&gt;Example&lt;/a&gt;
+          </code>
+          <h4>Linking to a file one level above the current folder</h4>
+          <code>
+            &lt;a href="../me.png"&gt;My Picture&lt;/a&gt;
+          </code>
+        </blockquote>
+        <div class="result">
+          <h4>Result</h4>
+          <a href="index.html">Working with Links</a>
+          <a href="folder/index.html">Example</a>
+          <a href="../index.html">Home</a>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <img src="../me.png" width="60px" height="60px">
+      <p>Made with &hearts; by Harvey Cabaguio</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+body, nav, div, p, a, img, h1, h2, h3, h4, ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  width: 20%;
+  height: 100vh;
+}
+
+.content {
+  float: left;
+  width: 80%;
+  margin-left: 20%;
+  
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('HTML5_logo_and_wordmark.svg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+nav .content {
+  margin: 5%;
+  padding: 5%;
+  width: 80%;
+  
+  background-color: #eee;
+  background-image: none;
+  border: 1px solid #ddd;
+}
+
+nav a {
+  display: block;
+  margin-bottom: 5%;
+}
+
+p, a, ul, code, h4 {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 48px;
+}
+
+h2 { font-size: 32px; }
+
+h3 { font-size: 24px; }
+
+h4 { font-weight: bold; }
+
+section {
+  width: 80%;
+  margin: 5% auto;
+}
+
+ul { margin-left: 30px; }
+
+h1, h2, h3, p, code, .result { margin-bottom: 10px; }
+
+h1, h2, h3, blockquote { margin-top: 20px; }
+
+blockquote, .result {
+  background-color: #d1fad7;
+  border: 1px solid #9cf4a7;
+  margin-left: 0;
+  padding: 15px;
+  width: 100%;
+}
+
+.result {
+  background-color: #d1e3fa;
+  border: 1px solid #9cc2f4;
+}
+
+p code {
+  background-color: #d1fad7;
+  border: 1px solid #9cf4a7;
+  padding: 2px;
+}
+
+footer {
+  float: left;
+  display: block;
+  width: 98%;
+  padding-left: 2%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  
+  color: #fff;
+  
+  background-color: #444;
+}
