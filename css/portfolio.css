@@ -1,7 +1,3 @@
-.content.fold {
-  padding-top: 102px;
-}
-
 .quick-info {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -12,32 +8,39 @@
   border-bottom: 2px solid #eee8d5;
 }
 
-#role {
-  width: 65%;
-  margin-left: 0;
-}
-
-#site {
-  width: 32%;
-  margin-right: 0;
-}
-
 article p {
   margin-top: 10px;
   margin-bottom: 20px;
 }
 
-.photo {
-  text-align: center;
-}
-
-.photo#elementary {
+.photo-small {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 80px;
+    
   background-color: #fff;
-  padding: 40px;
 }
 
-.big {
-  width: 100%;
+.photo-big {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+article a:hover {
+  border: none;
+}
+
+article img, .pf-item {
+  transition-property: box-shadow;
+  transition-duration: 333ms;
+  transition-timing-function: ease-in-out;
+}
+
+article img:hover, .pf-item:hover {
+  box-shadow: 0 1px 4px 1px rgba(0,0,0,0.3);
 }
 
 #more {

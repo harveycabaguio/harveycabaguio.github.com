@@ -97,6 +97,12 @@ a:visited {
   margin-right: auto;
 }
 
+.whole, .photo-big {
+  width: 98%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
 .half {
   float: left;
   width: 48%;
@@ -106,14 +112,14 @@ a:visited {
 
 .third {
   float: left;
-  width: 31%;
+  width: 31.33%;
   margin-left: 1%;
   margin-right: 1%;
 }
 
 .third-two {
   float: left;
-  width: 64%;
+  width: 64.66%;
   margin-left: 1%;
   margin-right: 1%;
 }
@@ -157,18 +163,24 @@ nav a:link {
   font-family: 'Roboto Slab', sans-serif;
   
   box-sizing: border-box;
+  transition-property: background, border-width;
+  transition-duration: 333ms;
 }
 
 nav a:hover {
   background-color: #eee8d5;
 }
 
-nav a#home {
-  text-transform: uppercase;
+nav ul {
+  display: table;
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
-nav a:not(#home) {
-  float: right;
+nav li {
+  display: table-cell;
 }
 
 footer {
@@ -177,8 +189,11 @@ footer {
   border-top: 2px solid #eee8d5;
 }
 
-#about {
+#about, .fold {
   padding-top: 102px;
+}
+
+#about {
   text-align: center;
 }
 
@@ -186,7 +201,7 @@ footer {
   margin-bottom: 30px;
 }
 
-.intro, .text {
+.intro, article p, article h3 {
   margin-left: auto;
   margin-right: auto;
   width: 76%;

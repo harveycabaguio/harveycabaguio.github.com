@@ -14,111 +14,78 @@
     <!-- Navigation -->
     <nav>
       <div class="content">
-        <a id="home" href="/"><img src="/assets/nav-logo.png" draggable="false"></a>
-        <a href="/#contact">Contact</a>
-        <a href="/#portfolio">Portfolio</a>
-        <a href="/#about">About</a>
+        <a href="/"><img src="/assets/nav-logo.png" draggable="false"></a>
+        <a href="#top" title="Go to the top of the page"><img src="/assets/nav-top.png" draggable="false"></a>
+        <a href="#bot" title="Go to the bottom of the page"><img src="/assets/nav-bot.png" draggable="false"></a>
+        <ul>
+          <li><a href="/#about">About</a><li>
+          <li><a href="/#portfolio">Portfolio</a><li>
+          <li><a href="/#contact">Contact</a><li>
+        </ul>
       </div>
     </nav>
-    
-    <section class="content fold" id="">
-      <div class="pf-item" id="elementary"></div>
-      
+    <a id="top"></a>
+    <section class="content fold">
+      <!-- Banner -->
+      <div class="whole pf-item" id="elementary"></div>
+      <!-- Quick Info -->
       <div class="text">
-        <div class="third-two quick-info" id="role">
+        <div class="third-two quick-info">
           <h4>Role</h4>
           <p>UI &amp; Web Designer</p>
         </div>
-        <div class="third quick-info" id="site">
+        <div class="third quick-info">
           <h4>Site</h4>
           <p><a href="http://elementary.io" target="_blank">elementary.io</a></p>
         </div>
       </div>
-      
+      <!-- Post -->
       <article>
-        <div class="text">
-          <h3>The elementary Project</h3>
-          <p>elementary is an organization focused on creating apps for the Linux desktop that are designed to be usable and beautiful. elementary OS is the accumulation of all this work into one cohesive operating system. It has been downloaded over 3 million times and is translated in 20+ languages.</p>
-          <p>I've been with the elementary team since after the first release of elementary OS, and have been helping guide some of the design decisions in it ever since.</p>
-        </div>
+        <h3>The elementary Project</h3>
+        <p>elementary is an organization focused on creating apps for the Linux desktop that are designed to be usable and beautiful. elementary OS is the accumulation of all this work into one cohesive operating system. It has been downloaded over 3 million times and is translated in 20+ languages.</p>
+        <p>I've been with the elementary team since after the first release of elementary OS back in 2011, and have been helping guide some of the design decisions in it ever since.</p>
       
-        <div class="text">
-          <h3>Desktop Design</h3>
-          <p>Blah</p>
-        </div>
+        <h3>Desktop Design</h3>
+        <p>Blah</p>
         
-        <div class="text">
-          <h3>Icons</h3>
-          <p>I've also created some of the app icons found in elementary OS. These are handcrafted in multiple sizes using Inkscape to ensure pixel perfection in all the places that the OS will use these icons.</p>
-        </div>
+        <h3>Icons</h3>
+        <p>I've also created some of the app icons found in elementary OS. These are handcrafted in multiple sizes using Inkscape to ensure pixel perfection in all the places that the OS will use these icons.</p>
         
-        <div class="photo" id="elementary">
-          <img src="/assets/elementary/audience.png">
-        </div>
-        <div class="text">
-          <p>Audience - Video Player App</p>
-        </div>
+        <img class="photo-small" src="/assets/elementary/audience.png">
+        <img class="photo-small" src="/assets/elementary/simple-scan.png">
+        <img class="photo-small" src="/assets/elementary/font-viewer.png">
         
-        <div class="photo" id="elementary">
-          <img src="/assets/elementary/simple-scan.png">
-        </div>
-        <div class="text">
-          <p>Simple Scan - Document Scanner App</p>
-        </div>
+        <h3>Website</h3>
+        <p>For elementary OS's third release I created the initial designs of the website refresh. Our focus for this refresh is to be mobile-first, </p>
         
-        <div class="photo" id="elementary">
-          <img src="/assets/elementary/font-viewer.png">
-        </div>
-        <div class="text">
-          <p>Font Viewer App</p>
-        </div>
-        
-        <div class="text">
-          <h3>Website</h3>
-          <p>For elementary OS's third release I created the initial designs of the website refresh. Our focus for this refresh is to be mobile-first, </p>
-        </div>
-        
-        <div class="photo" id="elementary">
-          <a href="/assets/elementary/web-getinvolved.png" target="_blank"><img class="big" src="/assets/elementary/web-getinvolved.png"></a>
-        </div>
-        <div class="text">
-          <p>Get Involved Page</p>
-        </div>
-        
-        <div class="photo" id="elementary">
-          <a href="/assets/elementary/web-develop.png"><img class="big" src="/assets/elementary/web-develop.png"></a>
-        </div>
-        <div class="text">
-          <p>Developer Page</p>
-        </div>
+        <a href="/assets/elementary/web-getinvolved.png" target="_blank"><img class="photo-big" src="/assets/elementary/web-getinvolved.png"></a>     
+        <a href="/assets/elementary/web-develop.png" target="_blank"><img class="photo-big" src="/assets/elementary/web-develop.png"></a>
       </article>
-      
-      <div class="text">
-        <div class="third-two quick-info" id="role">
-          <h4>Role</h4>
-          <p>UI &amp; Web Designer</p>
-        </div>
-        <div class="third quick-info" id="site">
-          <h4>Site</h4>
-          <p><a href="http://elementary.io" target="_blank">elementary.io</a></p>
-        </div>
+      <!-- Quick Info -->
+      <div class="third-two quick-info">
+        <h4>Role</h4>
+        <p>UI &amp; Web Designer</p>
+      </div>
+      <div class="third quick-info">
+        <h4>Site</h4>
+        <p><a href="http://elementary.io" target="_blank">elementary.io</a></p>
       </div>
     </section>
-    
     <!-- More -->
     <section class="content" id="more">
-      <div class="third pf-item white" id="foamfest">
+      <div class="third pf-item" id="foamfest">
         <a class="content" href="/portfolio/5kfoamfest/"></a>
       </div>
         
       <div class="third pf-item" id="elementary">
-        <a class="content" id="io" href="/portfolio/elementary/"></a>
+        <a class="content" href="/portfolio/elementary/"></a>
       </div>
-      <div class="third pf-item white" id="stranded">
+      <div class="third pf-item" id="stranded">
         <a class="content" href="/portfolio/stranded/"></a>
       </div>
     </section>
     <!-- Footer -->
+    <a id="bot"></a>
     <footer>
       <div class="content">
         <p>© 2015 <a href="mailto:harveycabaguio@gmail.com">Harvey Cabaguio</a></p>
