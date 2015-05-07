@@ -6,11 +6,27 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="styles.css">
+    <script>
+      function play(){
+        var audio = document.getElementById("audio");
+        if (audio.paused) {
+          audio.play();
+          document.getElementById("playpause").src="media-playback-pause.svg";
+          document.getElementById("window-title").innerHTML="Dual Destinies, Cross-Examination4.mix.wav";
+        } else {
+          audio.pause();
+          document.getElementById("playpause").src="media-playback-start.svg";
+          document.getElementById("window-title").innerHTML="Noise";
+        }
+      }
+    </script>
   </head>
   
   <body>
+    <audio id="audio" src="Dual%20Destinies,%20Cross-Examination4.mix.wav"></audio>
     <!-- Window -->
     <div class="window">
+      <div class="parent">
       <!-- Toolbar -->
       <nav>
         <!-- Toolbar Items -->
@@ -26,8 +42,8 @@
             </a>
           </li>
           <li class="button-toolbar">
-            <a href="#">
-              <img src="media-playback-start.svg" alt="play">
+            <a href="#" onclick="play()">
+              <img id="playpause" src="media-playback-start.svg" alt="play">
             </a>
           </li>
           <li class="button-toolbar">
@@ -50,15 +66,15 @@
             </a>
           </li>
         </ul>
-        <h3 class="window-title">Noise</h3>
+        <div class="player-info">
+          <p id="elapsed">0:49</p>
+          <h3 id="window-title">Noise</h3>
+          <p id="remaining">-1:30</p>
+          <input id="seekbar" type="range">
+        </div>
         <ul class="right">
           <li>
             <input class="search" type="text" placeholder="Search Music">
-          </li>
-          <li class="button-toolbar">
-            <a href="#">
-              <img src="document-properties.svg" alt="appmenu">
-            </a>
           </li>
           <li class="button-window">
             <a href="#">
@@ -67,24 +83,121 @@
           </li>
         </ul>
       </nav>
-      <section class="sidebar left">
-        <h3>Library</h3>
-        <ul>
-          <li class="selected"><img src="folder-music.svg" alt="music icon"><p>Music</p></li>
-        </ul>
-        <h3>Playlists</h3>
-        <ul>
-          <li><img src="folder-recent.svg" alt="history icon"><p>History</p></li>
-          <li><img src="playlist-queue.svg" alt="queue icon"><p>Queue</p></li>
-          <li><img src="playlist-similar.svg" alt="similar icon"><p>Similar</p></li>
-          <li><img src="playlist-automatic.svg" alt="playlist icon"><p>Favorite Songs</p></li>
-          <li><img src="playlist-automatic.svg" alt="playlist icon"><p>Recently Added</p></li>
-          <li><img src="playlist-automatic.svg" alt="playlist icon"><p>Recent Favorites</p></li>
-          <li><img src="playlist-automatic.svg" alt="playlist icon"><p>Never Played</p></li>
-          <li><img src="playlist-automatic.svg" alt="playlist icon"><p>Over Played</p></li>
-          <li><img src="playlist-automatic.svg" alt="playlist icon"><p>Not Recently Played</p></li>
-        </ul>
-      </section>
+        <section class="sidebar left">
+          <h3>Library</h3>
+          <ul>
+            <li class="selected"><img src="folder-music.svg" alt="music icon"><p>Music</p></li>
+          </ul>
+          <h3>Playlists</h3>
+          <ul>
+            <li><img src="folder-recent.svg" alt="history icon"><p>History</p></li>
+            <li><img src="playlist-queue.svg" alt="queue icon"><p>Queue</p></li>
+            <li><img src="playlist-similar.svg" alt="similar icon"><p>Similar</p></li>
+            <li><img src="playlist-automatic.svg" alt="playlist icon"><p>Favorite Songs</p></li>
+            <li><img src="playlist-automatic.svg" alt="playlist icon"><p>Recently Added</p></li>
+            <li><img src="playlist-automatic.svg" alt="playlist icon"><p>Recent Favorites</p></li>
+            <li><img src="playlist-automatic.svg" alt="playlist icon"><p>Never Played</p></li>
+            <li><img src="playlist-automatic.svg" alt="playlist icon"><p>Over Played</p></li>
+            <li><img src="playlist-automatic.svg" alt="playlist icon"><p>Not Recently Played</p></li>
+          </ul>
+          <div class="inline-toolbar">
+            <ul class="left">
+              <li><img src="list-add-symbolic.svg" alt="new playlist"></li>
+              <li><img src="list-remove-symbolic.svg" alt="remove playlist"></li>
+            </ul>
+            <ul class="right">
+              <li><img src="document-import-symbolic.svg" alt="import music"></li>
+              <li><img src="application-menu-symbolic.svg" alt="app settings"></li>
+            </ul>
+          </div>
+        </section>
+        <section class="content">
+          <div class="inline-toolbar">
+            <ul class="center">
+              <li><p>Artists</p></li>
+              <li class="selected"><p>Albums</p></li>
+              <li><p>Genres</p></li>
+            </ul>
+          </div>
+          <div class="album-view">
+            <div class="album-item">
+              <img src="audio-x-generic.svg">
+              <h3>Album Title</h3>
+              <p>Album Artist</p>
+            </div>
+            <div class="album-item">
+              <img src="audio-x-generic.svg">
+              <h3>Album Title</h3>
+              <p>Album Artist</p>
+            </div>
+            <div class="album-item">
+              <img src="audio-x-generic.svg">
+              <h3>Album Title</h3>
+              <p>Album Artist</p>
+            </div>
+            <div class="album-item">
+              <img src="audio-x-generic.svg">
+              <h3>Album Title</h3>
+              <p>Album Artist</p>
+            </div>
+            <div class="album-item">
+              <img src="audio-x-generic.svg">
+              <h3>Album Title</h3>
+              <p>Album Artist</p>
+            </div>
+            <div class="album-item">
+              <img src="audio-x-generic.svg">
+              <h3>Album Title</h3>
+              <p>Album Artist</p>
+            </div>
+            <div class="album-item">
+              <img src="audio-x-generic.svg">
+              <h3>Album Title</h3>
+              <p>Album Artist</p>
+            </div>
+            <div class="album-item selected">
+              <img src="Buiikikaesu_Front.jpg" width="128px">
+              <h3>Buiikikaesu</h3>
+              <p>Maximum the Hormone</p>
+            </div>
+            <div class="album-item">
+              <img src="audio-x-generic.svg">
+              <h3>Album Title</h3>
+              <p>Album Artist</p>
+            </div>
+            <div class="album-item">
+              <img src="audio-x-generic.svg">
+              <h3>Album Title</h3>
+              <p>Album Artist</p>
+            </div>
+          </div>
+        </section>
+        <section class="sidebar right">
+          <img class="album" src="Buiikikaesu_Front.jpg">
+          <div class="album-info">
+            <div class="info">
+              <h2>Buiikikaesu</h2>
+              <h3>Maximum the Hormone</h3>
+              <p>13 songs, 49:03 minutes long</p>
+            </div>
+            <ul>
+              <li><p>Buiiki Kaesu!!</p><p class="right">3:55</p></li>
+              <li><p>Zetsubou Billy</p><p class="right">3:44</p></li>
+              <li><p>Kuso Breakin Nou Breakin Lily</p><p class="right">4:16</p></li>
+              <li><p>Louisiana Bob</p><p class="right">3:41</p></li>
+              <li><p>Policeman Benz</p><p class="right">4:09</p></li>
+              <li><p>Black Yen Power G-Man Spy</p><p class="right">2:27</p></li>
+              <li><p>Akagi</p><p class="right">2:17</p></li>
+              <li><p>Kyoukatsu</p><p class="right">3:36</p></li>
+              <li><p>Bikini Sports Punchin</p><p class="right">3:57</p></li>
+              <li><p>What's up, people?!</p><p class="right">4:10</p></li>
+              <li><p>Chu Chu Lovely Muni Muni Mura...</p><p class="right">3:06</p></li>
+              <li><p>Shimi</p><p class="right">4:17</p></li>
+              <li><p>Koi no Mega Lover</p><p class="right">5:28</p></li>
+            </ul>
+          </div>
+        </section>
+      </div>
     </div>
   </body>
 </html>
