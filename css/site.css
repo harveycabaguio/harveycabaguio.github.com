@@ -21,7 +21,7 @@ h4
 /*
  * Text Elements
  */
-p, h4 {
+p, h4, li {
   font-family: 'Roboto Slab', sans-serif;
   font-size: 18px;
   line-height: 1.65;
@@ -201,7 +201,7 @@ footer {
   margin-bottom: 30px;
 }
 
-.intro, article p, article h3 {
+.intro, article p, article h3, article ul {
   margin-left: auto;
   margin-right: auto;
   width: 76%;
