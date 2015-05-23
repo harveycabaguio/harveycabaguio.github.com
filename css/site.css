@@ -183,6 +183,13 @@ nav li {
   display: table-cell;
 }
 
+.nav-link {
+  position: relative;
+  top: -20px;
+  display: block;
+  visibility: hidden;
+}
+
 footer {
   padding: 20px;
   
