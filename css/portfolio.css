@@ -52,3 +52,36 @@ article img:hover, .pf-item:hover {
   margin-top: 1%;
   margin-bottom: 1%;
 }
+
+/*
+ * Responsive Styling
+ */
+@media (max-width: 420px) {
+  .fold {
+    padding-top: 62px;
+  }
+
+  .third-two.quick-info {
+    margin: 0;
+    border-bottom: none;
+  }
+
+  .third.quick-info {
+    margin-top: 0;
+    border-top: none;
+  }
+
+  .photo-small {
+    padding: 10px;
+  }
+
+  #more .pf-item {
+    height: 200px;
+    margin: 0;
+  }
+
+  article ul {
+    width: calc(100% - 60px);
+    margin-left: 20px;
+  }
+}
