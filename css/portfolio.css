@@ -75,6 +75,10 @@ article img:hover, .pf-item:hover {
     padding: 10px;
   }
 
+  #more {
+    margin: 0;
+  }
+
   #more .pf-item {
     height: 200px;
     margin: 0;
