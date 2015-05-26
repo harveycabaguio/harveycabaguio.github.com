@@ -56,9 +56,9 @@ article img:hover, .pf-item:hover {
 /*
  * Responsive Styling
  */
-@media (max-width: 420px) {
+@media (max-width: 667px) and (min-width: 320px) {
   .fold {
-    padding-top: 62px;
+    padding-top: 0;
   }
 
   .third-two.quick-info {

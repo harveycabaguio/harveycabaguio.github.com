@@ -305,7 +305,7 @@ article ul {
   }
 }
 
-@media (max-width: 667px) and (min-width: 300px) {
+@media (max-width: 667px) and (min-width: 320px) {
   /* Text Elements */
   h2 {
     margin-bottom: 0;
@@ -314,7 +314,6 @@ article ul {
   /* Layout */
   .content {
     width: 100%;
-    min-width: 300px;
   }
 
   .whole,
