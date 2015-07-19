@@ -1,0 +1,128 @@
+@keyframes searchMode {
+  0% {
+    right: 30px;
+    bottom: calc(30px + 72px);
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+  }
+  50% {
+    right: calc(50% - 42px);
+    bottom: calc(50% - 42px);
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+  }
+  75%{
+    right: calc(50% - (540px / 2));
+    bottom: calc(50% - (960px / 2));
+    width: 540px;
+    height: 960px;
+    border-radius: 50%;
+  }
+  100% {
+    right: 0;
+    bottom: 0;
+    width: 540px;
+    height: 960px;
+    border-radius: 0;
+  }
+}
+
+@keyframes iconBG {
+  0% {
+    width: 36px;
+    height: 36px;
+    opacity: 0.87;
+  }
+  100% {
+    top: calc(50% - 72px);
+    left: calc(50% - 72px);
+    width: 144px;
+    height: 144px;
+    opacity: 0.27;
+  }
+}
+
+@keyframes searchbar {
+  0% {
+    top: calc(-37px - 11px);
+    opacity: 0.0;
+  }
+  100% {
+    top: calc(37px + 11px);
+    opacity: 1.0;
+  }
+}
+
+body {
+  min-width: 540px;
+  min-height: 960px;
+  background-color: #fdf6e3;
+  padding: 0;
+  margin: 0;
+}
+
+.screen {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 540px;
+  height: 960px;
+
+  background-color: #eeeeee;
+  overflow: hidden;
+}
+
+#bar1, #home-content {
+  position: absolute;
+  top: 0;
+}
+
+.fab {
+  position: absolute;
+  right: 30px;
+  bottom: calc(30px + 72px);
+  width: 84px;
+  height: 84px;
+
+  background-color: #ffeb3b;
+  border-radius: 50%;
+  box-shadow: 0 8px 24px 1px rgba(0,0,0,0.27);
+  animation-name: searchMode;
+  animation-delay: 1s;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+  .fab .icon {
+    position: absolute;
+    top: calc(50% - 18px);
+    left: calc(50% - 18px);
+    opacity: 0.87;
+    animation-name: iconBG;
+    animation-delay: 1.2s;
+    animation-duration: 250ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+
+  .fab .searchbar {
+    position: absolute;
+    top: calc(37px + 11px);
+    left: calc(50% - (518px / 2));
+
+    box-shadow: 0 2px 16px 1px rgba(0,0,0,0.27);
+    opacity: 0.0;
+    animation-name: searchbar;
+    animation-delay: 1.2s;
+    animation-duration: 250ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+
+#bar2 {
+  position: absolute;
+  bottom: 0;
+}
