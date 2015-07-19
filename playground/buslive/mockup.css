@@ -14,9 +14,9 @@
     border-radius: 50%;
   }
   75%{
-    right: calc(50% - (540px / 2));
+    right: calc(50% - (960px / 2));
     bottom: calc(50% - (960px / 2));
-    width: 540px;
+    width: 960px;
     height: 960px;
     border-radius: 50%;
   }
