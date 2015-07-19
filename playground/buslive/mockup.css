@@ -89,6 +89,8 @@ body {
   background-color: #ffeb3b;
   border-radius: 50%;
   box-shadow: 0 8px 24px 1px rgba(0,0,0,0.27);
+  transform: translateZ(0);
+
   -webkit-animation-name: searchMode;
   -webkit-animation-delay: 1s;
   -webkit-animation-duration: 200ms;
@@ -106,6 +108,8 @@ body {
     top: calc(50% - 18px);
     left: calc(50% - 18px);
     opacity: 0.87;
+    transform: translateZ(0);
+
     -webkit-animation-name: iconBG;
     -webkit-animation-delay: 1.2s;
     -webkit-animation-duration: 250ms;
@@ -124,6 +128,8 @@ body {
     left: calc(50% - (518px / 2));
     box-shadow: 0 2px 16px 1px rgba(0,0,0,0.27);
     opacity: 0.0;
+    transform: translateZ(0);
+
     -webkit-animation-name: searchbar;
     -webkit-animation-delay: 1.2s;
     -webkit-animation-duration: 250ms;
