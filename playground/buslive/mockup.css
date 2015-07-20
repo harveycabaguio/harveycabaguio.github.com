@@ -1,3 +1,8 @@
+body,h1,p {
+  margin: 0;
+  padding: 0;
+}
+
 @keyframes searchMode {
   0% {
     right: 30px;
@@ -67,12 +72,17 @@ body {
   position: relative;
   top: 0;
   left: 0;
+  display: inline-block;
   width: 540px;
   height: 960px;
 
   background-color: #eeeeee;
   overflow: hidden;
 }
+
+  #app-load {
+    display: inline-block;
+  }
 
 #bar1, #home-content {
   position: absolute;
@@ -90,17 +100,23 @@ body {
   border-radius: 50%;
   box-shadow: 0 8px 24px 1px rgba(0,0,0,0.27);
   transform: translateZ(0);
+}
 
+#search-click:hover .fab {
   -webkit-animation-name: searchMode;
-  -webkit-animation-delay: 1s;
+  -webkit-animation-delay: 500ms;
   -webkit-animation-duration: 200ms;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-iteration-count: 1;
   animation-name: searchMode;
-  animation-delay: 1s;
+  animation-delay: 500ms;
   animation-duration: 200ms;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
+}
+
+#app-load .fab {
+
 }
 
   .fab .icon {
@@ -109,14 +125,16 @@ body {
     left: calc(50% - 18px);
     opacity: 0.87;
     transform: translateZ(0);
+  }
 
+  #search-click:hover .fab .icon {
     -webkit-animation-name: iconBG;
-    -webkit-animation-delay: 1.2s;
+    -webkit-animation-delay: 700ms;
     -webkit-animation-duration: 250ms;
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-iteration-count: 1;
     animation-name: iconBG;
-    animation-delay: 1.2s;
+    animation-delay: 700ms;
     animation-duration: 250ms;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
@@ -129,14 +147,16 @@ body {
     box-shadow: 0 2px 16px 1px rgba(0,0,0,0.27);
     opacity: 0.0;
     transform: translateZ(0);
+  }
 
+  #search-click:hover .fab .searchbar {
     -webkit-animation-name: searchbar;
-    -webkit-animation-delay: 1.2s;
+    -webkit-animation-delay: 700ms;
     -webkit-animation-duration: 250ms;
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-iteration-count: 1;
     animation-name: searchbar;
-    animation-delay: 1.2s;
+    animation-delay: 700ms;
     animation-duration: 250ms;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
@@ -145,4 +165,185 @@ body {
 #bar2 {
   position: absolute;
   bottom: 0;
+}
+
+/* app-load */
+
+@keyframes barExpand {
+  0% {
+    width: 0;
+    height: 0;
+    border-bottom-right-radius: 100%;
+  }
+  66% {
+    border-bottom-right-radius: 100%;
+  }
+  100% {
+    width: 700px;
+    height: 700px;
+    border-bottom-right-radius: 100%;
+
+    background: linear-gradient(rgba(13,71,161,0.87),rgba(13,71,161,0.87)), url("map.png");
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@keyframes comeUp {
+  0% {
+    transform: translate3d(0, 200%, 0);
+    opacity: 1.0;
+  }
+  100% {
+    transform: none;
+    opacity: 1.0;
+  }
+}
+
+#app-load .container {
+  position: relative;
+  display: inline-block;
+  width: 540px;
+  height: 420px;
+  overflow: hidden;
+}
+
+.navigation-bar {
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  background-color: #0d47a1;
+  transform: translateZ(0);
+}
+
+#app-load:hover .navigation-bar {
+  -webkit-animation-name: barExpand;
+  -webkit-animation-delay: 500ms;
+  -webkit-animation-duration: 200ms;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+  animation-name: barExpand;
+  animation-delay: 500ms;
+  animation-duration: 200ms;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+
+#app-load:hover .navigation-bar .items,
+#app-load:hover .navigation-bar h1,
+#app-load:hover .navigation-bar p,
+#app-load:hover .navigation-bar a {
+  -webkit-animation-name: appear;
+  -webkit-animation-delay: 750ms;
+  -webkit-animation-duration: 200ms;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+  animation-name: appear;
+  animation-delay: 750ms;
+  animation-duration: 200ms;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 45px;
+  font-weight: 100;
+  color: #fff;
+  line-height: 1;
+  opacity: 0.0;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
+  color: #fff;
+  line-height: 1;
+}
+
+.caption {
+  font-size: 16px;
+  opacity: 0.0;
+}
+
+.navigation-bar h1,
+.navigation-bar .caption {
+  margin-left: 26px;
+}
+
+.navigation-bar .items {
+  margin-top: 37px;
+  opacity: 0.0;
+}
+
+.navigation-bar h1 {
+  margin-top: 59px;
+  margin-bottom: 22px;
+}
+
+a {
+  display: inline-block;
+  padding: 20px 16px;
+  margin-top: 27px;
+  margin-bottom: 57px;
+
+  font-family: 'Roboto Medium', sans-serif;
+  font-size: 19px;
+  color: rgba(255,255,255,0.7);
+  opacity: 0.0;
+}
+
+a:first-of-type {
+  margin-left: 9px;
+}
+
+a.selected {
+  color: #ffeb3b;
+  border-bottom: 3px solid #ffeb3b;
+  box-sizing: border-box;
+}
+
+.home-card {
+  position: absolute;
+  left: 2px;
+  opacity: 0.0;
+}
+
+.home-card#n1 { top: 380px; }
+.home-card#n2 { top: 634px; }
+
+#app-load .fab {
+  opacity: 0;
+}
+
+#app-load:hover .home-card#n1,
+#app-load:hover .home-card#n2,
+#app-load:hover .fab {
+  -webkit-animation-name: comeUp;
+  -webkit-animation-delay: 650ms;
+  -webkit-animation-duration: 300ms;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+  animation-name: comeUp;
+  animation-delay: 650ms;
+  animation-duration: 300ms;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+#app-load:hover .home-card#n2 {
+  animation-duration: 400ms;
+  -webkit-animation-delay: 650ms;
+  animation-delay: 650ms;
 }
