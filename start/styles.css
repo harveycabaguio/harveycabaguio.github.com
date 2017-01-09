@@ -70,8 +70,6 @@ a:hover {
   background-clip: padding-box;
   border: 1px solid rgba(0,0,0,0.4);
   border-radius: 3px;
-
-  transition: 120ms;
 }
   .button:link i,
   .button:visited i {
@@ -87,10 +85,17 @@ a:hover {
 /*
  * Styles
  */
-section {
-  box-shadow: -1px 0 2px 0 rgba(0,0,0,0.1);
+.button, section, section:hover {
+ transition: 240ms ease-in-out;
 }
-
+section {
+  box-shadow: 0 144px 1px 0 rgba(0,0,0,0.1);
+}
+section:hover,
+section:active {
+  box-shadow: 0 144px 32px 0 rgba(0,0,0,0.2);
+  z-index: 999;
+}
 .icon {
  display: inline-block;
  width: 24px;
@@ -163,45 +168,41 @@ section {
   body {
     display: inline-flex;
   }
-
   section {
     display: block;
     flex-grow: 0;
     flex-basis: 16.667%;
     height: 100vh;
-
-    transition: 200ms;
-  }
-  section:hover,
-  section:active {
-    box-shadow: 0 0 32px 0 rgba(0,0,0,0.2);
-    z-index: 999;
   }
   section .content {
     display: flex;
     flex-direction: column;
     height: 100%;
   }
-  .content .caption,
-  .content .title,
-  .content .info,
-  .content .links {
-    padding: 12px;
-  }
-  .content .caption {
-    display: flex;
-    align-items: flex-end;
-    min-height: 24px;
-  }
   .content .title {
     min-height: 144px;
-    padding-top: 0;
-    padding-bottom: 24px;
   }
-  .content .info {
-    min-height: 108px;
-  }
-  .content .links {
-    flex-grow: 1;
-  }
+}
+
+.content .caption,
+.content .title,
+.content .info,
+.content .links {
+  padding: 12px;
+}
+.content .caption {
+  display: flex;
+  align-items: flex-end;
+  min-height: 24px;
+}
+.content .title {
+  padding-top: 0;
+  padding-bottom: 24px;
+}
+.content .info {
+  min-height: 108px;
+}
+.content .links {
+  flex-grow: 1;
+  padding-bottom: 24px;
 }
