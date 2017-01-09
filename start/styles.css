@@ -1,0 +1,207 @@
+body, section, div, span,
+h1, h2, p, a, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --uw: rgba(238,42,55,1.0);
+  --uw-50: rgba(238,42,55,0.5);
+
+  --yoshiko: rgba(175,182,188,1.0);
+  --yoshiko-50: rgba(175,182,188,0.5);
+
+  --hanamaru: rgba(229,207,0,1.0);
+  --hanamaru-50: rgba(229,207,0,0.5);
+
+  --kanan: rgba(83,211,141,1.0);
+  --kanan-50: rgba(83,211,141,0.5);
+
+  --ruby: rgba(242,129,151,1.0);
+  --ruby-50: rgba(242,129,151,0.5);
+
+  --you: rgba(73,185,249,1.0);
+  --you-50: rgba(73,185,249,0.5);
+}
+
+/*
+ * Typography
+ */
+body {
+  color: rgba(0,0,0,0.8);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 9pt;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18pt;
+  font-weight: lighter;
+}
+
+h2 {
+  font-size: 9pt;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:link,
+a:visited {
+  color: rgba(0,0,0,0.8);
+  text-decoration: none;
+}
+a:hover {
+  border-bottom: 1px solid black;
+}
+
+.button:link,
+.button:visited {
+  display: inline-block;
+  padding-top: 6px;
+  padding-left: 3px;
+  padding-right: 12px;
+  padding-bottom: 6px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,0.4);
+  border-radius: 3px;
+
+  transition: 120ms;
+}
+  .button:link i,
+  .button:visited i {
+    color: rgba(0,0,0,0.8)!important;
+  }
+.button:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+.button:active {
+  background-color: rgba(0,0,0,0.4);
+}
+
+/*
+ * Styles
+ */
+section {
+  box-shadow: -1px 0 2px 0 rgba(0,0,0,0.1);
+}
+
+.icon {
+ display: inline-block;
+ width: 24px;
+ text-align: center;
+}
+
+.caption {
+  color:rgba(0,0,0,0.4);
+  font-weight: bold;
+}
+
+.info {
+  background-color: rgb(255,255,255);
+}
+  .info li {
+    line-height: 24px;
+  }
+
+.links {
+  background-color: rgb(255,255,255);
+}
+
+#uw { background-color: var(--uw); }
+  #uw .title { color: rgb(255,255,255); }
+  #uw i { color: var(--uw); }
+  #uw .button:link,
+  #uw .button:visited { border-color: var(--uw); }
+  #uw .button:hover { background-color: var(--uw-50); }
+  #uw .button:active { background-color: var(--uw); color: rgb(255,255,255); }
+
+#ealc2734 { background-color: var(--yoshiko); }
+  #ealc2734 i { color: var(--yoshiko); }
+  #ealc2734 .button:link,
+  #ealc2734 .button:visited { border-color: var(--yoshiko); }
+  #ealc2734 .button:hover { background-color: var(--yoshiko-50); }
+  #ealc2734 .button:active { background-color: var(--yoshiko); }
+
+#acs3916 { background-color: var(--hanamaru); }
+  #acs3916 i { color: var(--hanamaru); }
+  #acs3916 .button:link,
+  #acs3916 .button:visited { border-color: var(--hanamaru); }
+  #acs3916 .button:hover { background-color: var(--hanamaru-50); }
+  #acs3916 .button:active { background-color: var(--hanamaru); }
+
+#acs3923 { background-color: var(--kanan); }
+  #acs3923 i { color: var(--kanan); }
+  #acs3923 .button:link,
+  #acs3923 .button:visited { border-color: var(--kanan); }
+  #acs3923 .button:hover { background-color: var(--kanan-50); }
+  #acs3923 .button:active { background-color: var(--kanan); }
+
+#acs3901 { background-color: var(--ruby); }
+  #acs3901 i { color: var(--ruby); }
+  #acs3901 .button:link,
+  #acs3901 .button:visited { border-color: var(--ruby); }
+  #acs3901 .button:hover { background-color: var(--ruby-50); }
+  #acs3901 .button:active { background-color: var(--ruby); }
+
+#acs3909 { background-color: var(--you); }
+  #acs3909 i { color: var(--you); }
+  #acs3909 .button:link,
+  #acs3909 .button:visited { border-color: var(--you); }
+  #acs3909 .button:hover { background-color: var(--you-50); }
+  #acs3909 .button:active { background-color: var(--you); }
+
+/*
+ * Layout
+ */
+@media (orientation: landscape) {
+  body {
+    display: inline-flex;
+  }
+
+  section {
+    display: block;
+    flex-grow: 0;
+    flex-basis: 16.667%;
+    height: 100vh;
+
+    transition: 200ms;
+  }
+  section:hover,
+  section:active {
+    box-shadow: 0 0 32px 0 rgba(0,0,0,0.2);
+    z-index: 999;
+  }
+  section .content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .content .caption,
+  .content .title,
+  .content .info,
+  .content .links {
+    padding: 12px;
+  }
+  .content .caption {
+    display: flex;
+    align-items: flex-end;
+    min-height: 24px;
+  }
+  .content .title {
+    min-height: 144px;
+    padding-top: 0;
+    padding-bottom: 24px;
+  }
+  .content .info {
+    min-height: 108px;
+  }
+  .content .links {
+    flex-grow: 1;
+  }
+}
